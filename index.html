@@ -7,6 +7,10 @@
 <title>Diary Blog Template</title>
 <style>
 
+.card {
+border-radius:20px;
+}
+
 .newsletter {
 padding: 80px 0;
 height:auto;
@@ -102,12 +106,21 @@ filter:brightness(70%);
 <input type="email" class="form-control" placeholder="Enter your email" style="border-radius:20px;">
 <br/>
 <button class="btn" type="submit" style="border-radius:20px;">Subscribe Now</button>
-
 </div>
 </form>
 </div>
 </div>
 </div>
+</div>
+<div class="col d-none d-md-block">
+<form id="form_secondform mx-5 text-white">
+<h1 class="h1_secondform">Enter your message and share your feelings❤</h1>
+<div class="form-group form_group_secondform">
+<label for="exampleInputEmail1">Share your feelings</label><br/>
+<textarea name="text" class="pb-4"></textarea>
+<center><button type="submit" class="btn btn-primary btn_secondform">Share  <i class="bi bi-share-fill"></i></button></center>
+</div>
+<form>
 </div>
 </div>
 <div class="container d-block mx-6 mx-md-0 mw-md-75">
@@ -130,7 +143,7 @@ filter:brightness(70%);
 <div class="col-md-4 col-12 mb-4">
 <div class="card"> <img class="card-img-top" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Go somewhere</a> </div> </div>
 </div>
-<div class="col d-md-none">
+<div class="col-12 d-md-none">
 <div class="newsletter">
 <div class="content">
 <form class="bg-dark text-light">
@@ -145,8 +158,8 @@ filter:brightness(70%);
 </div>
 </div>
 </div>
-<div class="col d-md-none">
-<form id="form_secondform mx-5">
+<div class="col-12 d-md-none">
+<form id="form_secondform mx-5 text-white">
 <h1 class="h1_secondform">Enter your message and share your feelings❤</h1>
 <div class="form-group form_group_secondform">
 <label for="exampleInputEmail1">Share your feelings</label><br/>
@@ -158,7 +171,7 @@ filter:brightness(70%);
 </div>
 </div>
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid g-0 bg-secondary">
+<div class="container-fluid g-0 bg-info">
 
   <!-- Footer -->
   <footer class="text-center text-lg-start text-white">
