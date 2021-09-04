@@ -53,17 +53,18 @@ min-height: 100%;
 filter:brightness(70%);
 }
 
-#footer {
-position:fixed;
-z-index:1;
-background-color:#000;
+#footer_bg {
+overflow:hidden;
+max-width:100%;
+max-height:100%;
 }
 
 .footer_bg {
-position:absolute;
-left:0;
 z-index:-10000;
-max-width:100%;
+top:0;
+left:0;
+min-width: 100%;
+min-height: 100%;
 filter:brightness(70%);
 }
 
@@ -176,8 +177,10 @@ filter:brightness(70%);
   <!-- Footer -->
   <footer class="text-center text-lg-start text-white">
     <!-- Grid container -->
+<div id="footer_bg">
 <video loop muted autoplay class="footer_bg">
 <source src="./footer.mp4" type="video/mp4">
+</video>
     <div class="container p-4 pb-0">
       <!-- Section: Links -->
       <section class="">
@@ -311,7 +314,7 @@ filter:brightness(70%);
       </section>
       <!-- Section: Copyright -->
     </div>
-</video>
+</div>
     <!-- Grid container -->
   </footer>
   <!-- Footer -->
