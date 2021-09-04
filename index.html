@@ -52,12 +52,17 @@ min-width: 100%;
 min-height: 100%;
 filter:brightness(70%);
 }
+#footer {
+overflow:hidden;
+position:absolute;
+}
 
 .footer_bg {
-position:inherit;
 z-index:-1000000;
 top:0;
 left:0;
+min-width:100%;
+min-height:100;
 filter:brightness(70%);
 }
 
@@ -168,8 +173,8 @@ filter:brightness(70%);
 <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="container-fluid g-0">
   <!-- Footer -->
-  <footer class="footer_bg text-center text-lg-start text-white">
-<video loop muted autoplay>
+  <footer class="text-center text-lg-start text-white">
+<video loop muted autoplay class="footer_bg">
 <source src="./footer.mp4" type="video/mp4">
 </video>
     <!-- Grid container -->
