@@ -22,7 +22,7 @@ position:fixed;
 bottom:15px;
 right:22px;
 width:100%;
-z-index:1000000000;
+z-index:10000000;
 }
 
 #cssmenu{
@@ -309,7 +309,8 @@ color:#FFFFFF;
 .menu-icon-wrapper {
 float:left;
 top:8px;
-left:8px
+left:8px;
+position:fixed;
 }
 
 .menu-icon {
@@ -668,19 +669,19 @@ filter:brightness(70%);
               <b>Useful links</b>
             </h2>
             <p>
-              <a class="text-white">FAQ's</a>
+              <a>FAQ's</a>
             </p>
             <p>
-              <a class="text-white">Home</a>
+              <a>Home</a>
             </p>
             <p>
-              <a class="text-white">My Entries</a>
+              <a>My Entries</a>
             </p>
             <p>
-              <a class="text-white">About myself</a>
+              <a>About myself</a>
             </p>
             <p>
-              <a class="text-white">Submit your feelings anonymously</a>
+              <a>❤Submit your feelings anonymously❤</a>
             </p>
           </div>
 
@@ -811,7 +812,14 @@ $(document).ready(function() {
 </script>
 
 <script>
-function toggleCssMenu(icon) { var cssmenu = document.getElementById('cssmenu'); if (icon.className.indexOf('active') == -1) { icon.className = 'menu-icon active';			cssmenu.style.display = "block";			setTimeout(function(){cssmenu.className = 'active';},0); } else { icon.className = 'menu-icon';			cssmenu.className = '';			setTimeout(function(){cssmenu.style.display = "none";},411); } }
+function toggleCssMenu(icon) { 
+var cssmenu = document.getElementById('cssmenu'); 
+if (icon.className.indexOf('active') == -1) { icon.className = 'menu-icon active';
+cssmenu.style.display = "block";			
+setTimeout(function(){cssmenu.className = 'active';},0); } 
+else { icon.className = 'menu-icon';			
+cssmenu.className = '';			
+setTimeout(function(){cssmenu.style.display = "none";},411); } }
 </script>
 </body>
 </html>
