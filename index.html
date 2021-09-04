@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 <title>Diary Blog Template</title>
 <style>
 
@@ -307,10 +310,11 @@ color:#FFFFFF;
 }
 /*----------- menu-icon ----------------*/
 .menu-icon-wrapper {
-float:left;
-top:8px;
-left:8px;
+float:right;
+top:15px;
+left:15px;
 position:fixed;
+z-index:10000000;
 }
 
 .menu-icon {
@@ -318,7 +322,9 @@ margin-top:-8px;
     padding:15px!important;
     cursor: pointer;
     outline: none;
-    background-color:#FE7F9C;
+    background-color:#48c6ef;
+    background: -webkit-linear-gradient(to top, rgba(72, 198, 239, 1), rgba(111, 134, 214, 1));
+    background: linear-gradient(to top, rgba(72, 198, 239, 1), rgba(111, 134, 214, 1));
     border-radius:100%!important;
     transition: all 0.35s ease-out;
     user-select:none;
@@ -522,27 +528,6 @@ filter:brightness(70%);
 <div class="row">
 <div class="col-9 mw-75"></div>
 <div class="col-3 mb-5 mt-2">
-<div class="newsletter">
-<div class="content">
-<form class="text-light bg-dark">
-<h2 class="text-light pt-3">SUBSCRIBE TO OUR NEWSLETTER</h2>
-<div class="input-group">
-<input type="email" class="form-control" placeholder="Enter your email" style="border-radius:20px;"></input>
-<button class="d-block btn clearfix">Subscribe</button>
-</div>
-</form>
-</div>
-</div>
-<div class="col d-none d-md-block mt-4">
-<form id="form_secondform mx-6 text-white">
-<h3 class="h1_secondform text-white text-center">Enter your message and share your feelings❤</h3>
-<div class="form-group form_group_secondform">
-<label for="exampleInputEmail1"><span class="text-white">Share your feelings</span></label><br/>
-<textarea name="text" class="pb-5"></textarea>
-<center><button type="submit" class="btn btn-primary btn_secondform">Share  <i class="bi bi-share-fill"></i></button></center>
-</div>
-<form>
-</div>
 <div class="col mr-5">
 <div class="d-md-block mt-2 embed-responsive embed-responsive-1by1">
 <iframe class="embed-responsive-item" width="200" height="200" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -691,8 +676,18 @@ filter:brightness(70%);
           <!-- Grid column -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h2 class="text-uppercase mb-4 text-dark font-weight-bold"><b>Contact</b></h2>
-            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+           <div class="col d-md-none mt-4">
+<form id="form_secondform mx-6 text-white">
+<h3 class="h1_secondform text-white text-center">Enter your message and share your feelings❤</h3>
+<div class="form-group form_group_secondform">
+<label for="exampleInputEmail1"><span class="text-white">Share your feelings</span></label><br/>
+<textarea name="text" class="pb-5"></textarea>
+<center><button type="submit" class="btn btn-primary btn_secondform">Share  <i class="bi bi-share-fill"></i></button></center>
+</div>
+<form>
+</div>
+            <p><i class="fas fa-phone d-none mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print d-none mr-3"></i> + 01 234 567 89</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -708,12 +703,10 @@ filter:brightness(70%);
           <!-- Grid column -->
           <div class="col-md-7 col-lg-8 text-center text-md-start">
             <!-- Copyright -->
-            <div class="p-3">
+            <div class="p-3" style="font-family: 'Satisfy', cursive;">
               Designed by:
-              <a class="text-white" href="#"
-                 >
-<br/>S.S Leonard Tyler <br/>(S.S Leonard Tyler)</a
-                >
+              <a class="text-white" href="#">
+<br/>Sarabjeet Singh<br/>(S.S Leonard Tyler)</a>
             </div>
             <!-- Copyright -->
           </div>
