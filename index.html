@@ -10,13 +10,6 @@
 .placeholder{
 filter:brightness(5%);
 }
-.placeholder-wave { 
--webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%); 
-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%); 
--webkit-mask-size: 200% 100%; 
-mask-size: 200% 100%; 
--webkit-animation: placeholder-wave 1s infinite; 
-animation: placeholder-wave 1s infinite; } @-webkit-keyframes placeholder-wave { 100% { -webkit-mask-position: -200% 0%; mask-position: -200% 0%; } } @keyframes placeholder-wave { 100% { -webkit-mask-position: -200% 0%; mask-position: -200% 0%; } }
 
 </style>
 </head>
@@ -423,6 +416,8 @@ animation: placeholder-wave 1s infinite; } @-webkit-keyframes placeholder-wave {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="./js/cssmenu.js"></script>
 <script> 
-$('body').toggleClass('img');
+$(document).ready(function() {
+  $('.placeholder-wave').removeClass('.placeholder-wave').addClass('d-block');
+});
 </body>
 </html>
