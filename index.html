@@ -9,13 +9,14 @@
 
 .placeholder{
 filter:brightness(5%);
+-webkit-animation: brightness 3s;
 }
 
-@keyframes placeholder {
-    0%   {background: red;}
-    50%  {background: pink;}
-    100% {background: red;}
+@-webkit-keyframes blur {
+  0%, 100%  { -webkit-filter: brightness(5%); }
+  50% { -webkit-filter: brightness(100%); }
 }
+
 </style>
 </head>
 <body>
