@@ -1,1 +1,8 @@
-jdjd
+body {
+max-width:100%;
+font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+h6 {
+font-size:22px;
+}
