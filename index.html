@@ -18,25 +18,11 @@ filter:brightness(5%);
   mask-size: 200% 100%;
   -webkit-animation: placeholder-wave 4s linear infinite;
   animation: placeholder-wave 4s linear infinite;
-animation-duration:50s;
-}
-
-@-webkit-keyframes placeholder-wave {
-  99% {
-    -webkit-mask-position: -200% 0%;
-    mask-position: -200% 0%;
-  }
+animation-duration:30s;
 }
 
 @-webkit-keyframes placeholder-wave {
   100% {
-    -webkit-mask-position: 0%;
-    mask-position: 0%;
-  }
-}
-
-@keyframes placeholder-wave {
-  99% {
     -webkit-mask-position: -200% 0%;
     mask-position: -200% 0%;
   }
@@ -44,8 +30,8 @@ animation-duration:50s;
 
 @keyframes placeholder-wave {
   100% {
-    -webkit-mask-position: 0%;
-    mask-position: 0%;
+    -webkit-mask-position: -200% 0%;
+    mask-position: -200% 0%;
   }
 }
 
