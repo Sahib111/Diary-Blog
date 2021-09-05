@@ -425,9 +425,8 @@ filter:brightness(5%);
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="./js/cssmenu.js"></script>
 <script> 
-setTimeout(function() {
-$(".myfix").removeClass("placeholder-wave").removeClass("placeholder");
-},3000);
+$(document).ready(function() {
+$(".myfix").delay(500).removeClass("placeholder-wave").removeClass("placeholder");
 });
 </script>
 </body>
