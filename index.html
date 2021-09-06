@@ -10,9 +10,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js");
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js");
 <script src="./js/youtubebar.js"></script>
+<style>
+.progress-bar { /* Remain on top */ position: fixed; top: 0; /* Thickness & Color */ height: 5px; background:yellow; /* How fast progress happens */ transition: width .25s; /* Display on top of everything */ z-index:9999;}
+</style>
 </head>
 <body>
-
+<div class="progress-bar"></div>
 <video loop muted autoplay class="fullscreenvideo position-fixed">
 <source src="./background/children.mp4" type="video/mp4">
 </video>
@@ -519,5 +522,31 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="./js/cssmenu.js"></script>
 <script src="./js/placeholder.js"></script>
+<script>
+// The function that will take care of everything
+function updateProgressBar() {
+  // Retrieve nodes & Scroll value
+  const progressBar = document.querySelector(".progress-bar");
+  const content = document.querySelector(".very-long-content");
+  const scroll = window.pageYOffset;
+  
+  // Compute bottom part of the long content
+  const endPosition = content.offsetTop + content.offsetHeight - window.innerHeight;
+  
+  // Compute percent on a 0-100 scale
+  const progress = Math.min(Math.ceil( (scroll / endPosition) * 100), 100);
+
+  // Update progress bar
+  progressBar.style.width = `${progress}%`;
+}
+
+window.onload = function() {
+  // If user has scrolled before the page has fully loaded, update the progress bar to  ensure consistence
+  updateProgressBar();
+  
+  // On scroll, update the progress bar
+  document.addEventListener('scroll', updateProgressBar);
+}
+</script>
 </body>
 </html>
