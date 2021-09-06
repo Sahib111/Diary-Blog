@@ -18,6 +18,16 @@ filter:brightness(5%) contrast(5%);
     mask-position: 0% 0%;
 }
 
+5%{
+-webkit-mask-position: -10% 0%;
+    mask-position: -10% 0%;
+}
+
+10%{
+-webkit-mask-position: -20% 0%;
+    mask-position: -20% 0%;
+}
+
 20% {
 -webkit-mask-position: -40% 0%;
     mask-position: -40% 0%;
@@ -50,6 +60,11 @@ filter:brightness(5%) contrast(5%);
 0% {
 -webkit-mask-position: 0% 0%;
     mask-position: 0% 0%;
+}
+
+5%{
+-webkit-mask-position: -20% 0%;
+    mask-position: -20% 0%;
 }
 
  20% {
