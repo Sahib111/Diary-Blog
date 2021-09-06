@@ -10,27 +10,25 @@
 </style>
 </head>
 <body>
+
 <video loop muted autoplay class="fullscreenvideo position-fixed">
 <source src="./background/children.mp4" type="video/mp4">
 </video>
 
-<header id="luxbar" class="luxbar-fixed d-none d-md-block myfix placeholder-wave placeholder">
-    <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
-    <div class="luxbar-menu luxbar-menu-left luxbar-menu-dark">
-        <ul class="luxbar-navigation">
-            <li class="luxbar-header">
-                <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
-                id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
-            </li>
-            <li class="luxbar-item"><a href="#">Home</a></li>
-            <li class="luxbar-item"><a href="#">About Myself</a></li>
-            <li class="luxbar-item"><a href="#">My Entries</a></li>
-            <li class="luxbar-item"><a href="#">Feelings</a></li>
-        </ul>
-    </div>
-</header>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
 
-<div class="mb-3 mx-0 myfix placeholder-wave placeholder">
+<div class="mb-3 mx-0 d-block d-md-none">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-indicators">
 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,23 +59,24 @@
 </div>
 </div>
 </div>
-<div class="container-fluid d-none d-md-inline-block mr-md-6 position-absolute">
+
+<div class="container-fluid d-block d-md-none mr-md-6 position-absolute">
 <div class="row">
 <div class="col-9 mw-md-75"></div>
 <div class="col-3 mb-5 mr-md-5 mt-2">
 <div class="card myfix placeholder-wave placeholder">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+<div class="card-header">Featured</div>
+<div class="card-body">
+<h5 class="card-title">Special title treatment</h5>
+<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+<a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
+</div>
+
 <br/>
+
 <div class="col mr-md-5">
-<div class="d-md-block mt-2 embed-responsive embed-responsive-1by1">
+<div class="d-block d-md-none d-block mt-2 embed-responsive embed-responsive-1by1">
 <iframe class="embed-responsive-item myfix placeholder-wave placeholder" width="200" height="200" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe> 
 </div>
@@ -138,8 +137,225 @@
 </div>
 
 
+<div class="container-fluid mt-2 d-block d-md-none" style="background: #6a85b6; background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1)); background: linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));">
+<footer class="text-center text-light">
+<div class="container">
+<div class="row">
+<div class="col mx-2 d-block d-md-none">
+<form>
+<div class="form-group">
+<label class="text-dark mt-4" for="inputEmail"><h3><b>Subscribe for our newsletter</b></h3></label>
+<input type="email" class="form-control mb-4" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
+</div>
+<button type="submit" class="btn btn-primary" style="border-radius:20px;">Subscribe Now</button>
+</form>
+</div>
+
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col mx-2 d-block d-md-none mt-3">
+<h2 class="text-uppercase text-dark font-weight-bold"><b>Contact us</b></h2>
+<form>
+<div class="form-group"> 
+<label for="exampleFormControlTextarea1"></label> 
+<textarea class="form-control pb-4" id="exampleFormControlTextarea1" rows="3" placeholder="Feel free to type anything..." style="border-radius:10px;"></textarea> 
+</div>
+<br/>
+<center><button type="submit" class="btn btn-primary" style="border-radius:20px;">Share &nbsp;<i class="bi bi-share-fill"></i></button></center>
+</form>
+</div>
+
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="container-fluid p-4 pb-0">
+<section class="text-dark">
+<div class="row">
+<div class="col-md-3 col-lg-3 col-xl-3 mx-6 mt-3">
+<h2 class="text-uppercase mb-4 text-dark font-weight-bold">
+<b>My Diary</b>
+</h2>
+<p>
+<h6>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+</p>
+</div>
+
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase mb-4 text-center text-dark font-weight-bold"><b>Products</b></h2>
+<p><a><h6>MDBootstrap</a></p>
+<p><a>MDWordPress</a></p>
+<p><a>BrandFlow</a></p>
+<p><a>Bootstrap Angular</h6></a>
+</p>
+</div>
+          
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase text-dark mb-4 font-weight-bold"><b>Useful links</b></h2>
+<p><a><h6>FAQ's</a></p>
+<p><a>Home</a></p>
+<p><a>My Entries</a></p>
+<p><a>About myself</a></p>
+<p><a>Submit your feelings anonymously</h6></a></p>
+</div>
+
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+</div>
+</div>
+</section>
+      
+<hr class="my-3">
+
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+<div class="col-md-7 col-lg-8 text-center text-md-start">
+<div class="p-3" style="font-family: 'Satisfy', cursive;">Designed by:
+<a class="text-white" href="#">
+<br/>Sarabjeet Singh<br/>(S.S Leonard Tyler)</a>
+</div>
+</div>
+         
+<div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</section>
+</div>
+</footer>
+</div>
+
+<div class='menu-icon-wrapper d-md-none'>
+<div style='text-align:center; bottom:-40px;'/>
+<div class='menu-icon' onclick='toggleCssMenu(this)'>		
+<div class='three-line'>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+
+<div id='cssmenu'>
+<ul>
+<li><a href='#'>Home</a></li>
+<li><a href='#'>About Us</a></li>
+<li><a href='#'>Privacy Policy</a></li>
+<li><a href='#'>Terms and Conditions</a></li>
+</ul>
+</div>
+</div>
 
 
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<!-------------MOBILE------------>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<><><><><><><><><><><><><><><><><>
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+<!----------NON-MOBILE----------->
+
+<header id="luxbar" class="luxbar-fixed d-none d-md-block myfix placeholder-wave placeholder">
+<input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+<div class="luxbar-menu luxbar-menu-left luxbar-menu-dark">
+<ul class="luxbar-navigation">
+<li class="luxbar-header">
+<label class="luxbar-hamburger luxbar-hamburger-doublespin" id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label></li>
+<li class="luxbar-item"><a href="#">Home</a></li>
+<li class="luxbar-item"><a href="#">About Myself</a></li>
+<li class="luxbar-item"><a href="#">My Entries</a></li>
+<li class="luxbar-item"><a href="#">Feelings</a></li>
+</ul>
+</div>
+</header>
+
+<div class="mb-3 mx-0 myfix placeholder-wave placeholder">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/time-371226_1920_dLYmYyJNc.jpg?updatedAt=1630258954282" class="d-block w-100 h-100">
+</div>
+<div class="carousel-item" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" class="d-block w-100 h-100">
+</div>
+<div class="carousel-item" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/panda-1892023_1280_Pbn4yQzID.png?updatedAt=1629913942274" class="d-block w-100 h-100">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid d-none d-md-inline-block mr-md-6 position-absolute">
+<div class="row">
+<div class="col-9 mw-md-75"></div>
+<div class="col-3 mb-5 mr-md-5 mt-2">
+<div class="card myfix placeholder-wave placeholder">
+<div class="card-header">Featured</div>
+<div class="card-body">
+<h5 class="card-title">Special title treatment</h5>
+<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+<a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+<br/>
+<div class="col mr-md-5">
+<div class="d-md-block mt-2 embed-responsive embed-responsive-1by1">
+<iframe class="embed-responsive-item myfix placeholder-wave placeholder" width="200" height="200" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="container d-none d-md-block mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
@@ -191,29 +407,17 @@
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid mt-2" style="background: #6a85b6; background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1)); background: linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));">
-
-<!-- Footer -->
-
-<footer class="text-center text-light myfix placeholder-wave placeholder">
+<div class="container-fluid mt-2 myfix placeholder-wave placeholder" style="background: #6a85b6; background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1)); background: linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));">
+<footer class="text-center text-light">
 <div class="container">
 <div class="row">
 <div class="col mx-2 d-block d-md-none">
 <form>
-    <div class="form-group">
-        <label class="text-dark mt-4" for="inputEmail"><h3><b>Subscribe for our newsletter</b></h3></label>
-        <input type="email" class="form-control mb-4" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
-    </div>
-    <button type="submit" class="btn btn-primary" style="border-radius:20px;">Subscribe Now</button>
+<div class="form-group">
+<label class="text-dark mt-4" for="inputEmail"><h3><b>Subscribe for our newsletter</b></h3></label>
+<input type="email" class="form-control mb-4" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
+</div>
+<button type="submit" class="btn btn-primary" style="border-radius:20px;">Subscribe Now</button>
 </form>
 </div>
 
@@ -235,87 +439,50 @@
 
 <div class="col d-none d-md-block">
 <form>
-    <div class="form-group">
-        <label class="text-dark mt-4" for="inputEmail"><h3><b>Subscribe for our newsletter</b></h3></label>
-        <input type="email" class="form-control mb-4" id="inputEmail" placeholder="Email" style="border-radius:20px;max-width:100%;">
-    </div>
-    <button type="submit" class="btn btn-primary" style="border-radius:20px;">Subscribe Now</button>
+<div class="form-group">
+<label class="text-dark mt-4" for="inputEmail"><h3><b>Subscribe for our newsletter</b></h3></label>
+<input type="email" class="form-control mb-4" id="inputEmail" placeholder="Email" style="border-radius:20px;max-width:100%;">
+</div>
+<button type="submit" class="btn btn-primary" style="border-radius:20px;">Subscribe Now</button>
 </form>
 </div>
 </div>
 </div>
 
-    <!-- Grid container -->
-    <div class="container-fluid p-4 pb-0">
-      <!-- Section: Links -->
-      <section class="text-dark">
-        <!--Grid row-->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-6 mt-3">
-            <h2 class="text-uppercase mb-4 text-dark font-weight-bold">
-              <b>My Diary</b>
-            </h2>
-            <p>
-              <h6>Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.</h6>
-            </p>
-          </div>
-          <!-- Grid column -->
+<div class="container-fluid p-4 pb-0">
+<section class="text-dark">
+<div class="row">
+<div class="col-md-3 col-lg-3 col-xl-3 mx-6 mt-3">
+<h2 class="text-uppercase mb-4 text-dark font-weight-bold">
+<b>My Diary</b></h2>
+<p><h6>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6></p>
+</div>
 
-          <hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
 
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase mb-4 text-center text-dark font-weight-bold"><b>Products</b></h2>
+<p><a><h6>MDBootstrap</a></p>
+<p><a>MDWordPress</a></p>
+<p><a>BrandFlow</a></p>
+<p><a>Bootstrap Angular</h6></a></p>
+</div>
+          
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
 
-          <!-- Grid column -->
-          <div class="col-md-3 mt-3">
-            <h2 class="text-uppercase mb-4 text-center text-dark font-weight-bold"><b>Products</b></h2>
-            <p>
-              <a><h6>MDBootstrap</a>
-            </p>
-            <p>
-              <a>MDWordPress</a>
-            </p>
-            <p>
-              <a>BrandFlow</a>
-            </p>
-            <p>
-              <a>Bootstrap Angular</h6></a>
-            </p>
-          </div>
-          <!-- Grid column -->
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase text-dark mb-4 font-weight-bold"><b>Useful links</b></h2>
+<p><a><h6>FAQ's</a></p>
+<p><a>Home</a></p>
+<p><a>My Entries</a></p>
+<p><a>About myself</a></p>
+<p><a>Submit your feelings anonymously</h6></a></p>
+</div>
 
-          <hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
 
-          <!-- Grid column -->
-          <div class="col-md-3 mt-3">
-            <h2 class="text-uppercase text-dark mb-4 font-weight-bold">
-              <b>Useful links</b>
-            </h2>
-            <p>
-              <a><h6>FAQ's</a>
-            </p>
-            <p>
-              <a>Home</a>
-            </p>
-            <p>
-              <a>My Entries</a>
-            </p>
-            <p>
-              <a>About myself</a>
-            </p>
-            <p>
-              <a>Submit your feelings anonymously</h6></a>
-            </p>
-          </div>
-
-          <!-- Grid column -->
-          <hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
-
-          <!-- Grid column -->
-          <div class="col-md-3 d-none d-md-block mt-3">
-            <h2 class="text-uppercase mb-4 text-dark font-weight-bold"><b>Contact us</b></h2>
-           
+<div class="col-md-3 d-none d-md-block mt-3">
+<h2 class="text-uppercase mb-4 text-dark font-weight-bold"><b>Contact us</b></h2>
 <form id="form-group text-white">
 <h6 class="text-dark">Share your personal feelings anonymously.</h6>
 <div class="form-group"> 
@@ -326,95 +493,29 @@
 <center><button type="submit" class="btn btn-primary" style="border-radius:20px;">Share &nbsp;<i class="bi bi-share-fill"></i></button></center>
 <form>
 </div>
-
-            </div>
-          <!-- Grid column -->
-        </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-
-      <hr class="my-3">
-
-      <!-- Section: Copyright -->
-      <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-          <!-- Grid column -->
-          <div class="col-md-7 col-lg-8 text-center text-md-start">
-            <!-- Copyright -->
-            <div class="p-3" style="font-family: 'Satisfy', cursive;">
-              Designed by:
-              <a class="text-white" href="#">
-<br/>Sarabjeet Singh<br/>(S.S Leonard Tyler)</a>
-            </div>
-            <!-- Copyright -->
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-            <!-- Facebook -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-facebook-f"></i
-              ></a>
-
-            <!-- Twitter -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-twitter"></i
-              ></a>
-
-            <!-- Google -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-google"></i
-              ></a>
-
-            <!-- Instagram -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-instagram"></i
-              ></a>
-          </div>
-          <!-- Grid column -->
-        </div>
-      </section>
-      <!-- Section: Copyright -->
-    </div>
-    <!-- Grid container -->
-  </footer>
-  <!-- Footer -->
-</div>
-<!-- End of .container -->
-
-<div class='menu-icon-wrapper d-md-none'>
-<div style='text-align:center; bottom:-40px;'/>
-<div class='menu-icon' onclick='toggleCssMenu(this)'>		
-<div class='three-line'>
-<span></span>
-<span></span>
-<span></span>
 </div>
 </div>
-</div>
+</section>
+      
+<hr class="my-3">
 
-<div id='cssmenu'>
-<ul>
-<li><a href='#'>Home</a></li>
-<li><a href='#'>About Us</a></li>
-<li><a href='#'>Privacy Policy</a></li>
-<li><a href='#'>Terms and Conditions</a></li>
-</ul>
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+<div class="col-md-7 col-lg-8 text-center text-md-start">
+<div class="p-3" style="font-family: 'Satisfy', cursive;">Designed by:
+<a class="text-white" href="#"><br/>Sarabjeet Singh<br/>(S.S Leonard Tyler)</a>
 </div>
+</div>
+<div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</section>
+</div>
+</footer>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
