@@ -11,6 +11,16 @@
 filter:brightness(5%);
 }
 
+.placeholder-wave {
+  -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+animation-timing-function: linear;
+  -webkit-animation: placeholder-wave 0.5s linear infinite;
+  animation: placeholder-wave 0.5s linear infinite;
+}
+
 </style>
 </head>
 <body>
@@ -426,7 +436,7 @@ filter:brightness(5%);
 <script src="./js/cssmenu.js"></script>
 <script> 
 setTimeout(function() {
-$(".myfix").fadeOut("slow").removeClass("placeholder-wave").removeClass("placeholder");
+$(".myfix").removeClass("placeholder-wave").removeClass("placeholder");
 }, 10000);
 </script>
 </body>
