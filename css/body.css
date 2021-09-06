@@ -6,3 +6,7 @@ font-family: 'IBM Plex Sans Arabic', sans-serif;
 h6 {
 font-size:22px;
 }
+
+.btn {
+border-radius:15px;
+}
