@@ -7,6 +7,6 @@ filter:brightness(5%) contrast(5%);
   mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
   -webkit-mask-size: 200% 100%;
   mask-size: 200% 100%;
-  -webkit-animation: placeholder-wave infinite;
-  animation: placeholder-wave infinite;
+  -webkit-animation: placeholder-wave 0.1s infinite;
+  animation: placeholder-wave 0.1s infinite;
 }
