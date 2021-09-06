@@ -5,7 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./boss.css"/>
 <title>Diary Blog Template</title>
-
+<style>
+.embed-responsive-4by3 
+.embed-responsive-1by1 {
+border-radius:20px;
+}
+</style>
 </head>
 <body>
 
@@ -225,7 +230,7 @@
 </footer>
 </div>
 
-<div class='menu-icon-wrapper d-block d-md-none'>
+<div class='menu-icon-wrapper d-block d-md-none myfix placeholder-wave placeholder'>
 <div style='text-align:center; bottom:-40px;'/>
 <div class='menu-icon' onclick='toggleCssMenu(this)'>		
 <div class='three-line'>
@@ -285,7 +290,7 @@
 <!----------NON-MOBILE----------->
 <!----------NON-MOBILE----------->
 
-<header id="luxbar" class="luxbar-fixed d-none d-md-block myfix placeholder-wave placeholder">
+<header id="luxbar" class="luxbar-fixed d-none d-md-block myfix placeholder">
 <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
 <div class="luxbar-menu luxbar-menu-left luxbar-menu-dark">
 <ul class="luxbar-navigation">
@@ -299,7 +304,7 @@
 </div>
 </header>
 
-<div class="mb-3 mx-0 d-none d-md-block myfix placeholder-wave placeholder">
+<div class="mb-3 mx-0 d-none d-md-block myfix placeholder">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 <div class="carousel-indicators">
 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -335,7 +340,7 @@
 <div class="row">
 <div class="col-9 mw-75 mx-6"></div>
 <div class="col mr-md-5 mt-2">
-<div class="card myfix placeholder-wave placeholder" style="max-width:90%;">
+<div class="card myfix placeholder" style="max-width:90%;">
 <div class="card-header">Featured</div>
 <div class="card-body">
 <h5 class="card-title">Special title treatment</h5>
@@ -346,7 +351,7 @@
 <br/>
 <div class="col mr-md-5">
 <div class="d-md-block mt-2 embed-responsive embed-responsive-1by1">
-<iframe class="embed-responsive-item myfix placeholder-wave placeholder" width="200" height="200" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe class="embed-responsive-item myfix placeholder" width="200" height="200" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe> 
 </div>
 </div>
@@ -396,7 +401,7 @@
 </div>
 </div>
 
-<div class="container-fluid mt-2 d-none d-md-block myfix placeholder-wave placeholder" style="background: #6a85b6; background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1)); background: linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));">
+<div class="container-fluid mt-2 d-none d-md-block myfix placeholder" style="background: #6a85b6; background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1)); background: linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));">
 <footer class="text-center text-light">
 <div class="container">
 <div class="row">
@@ -513,7 +518,7 @@
 <script>
 setTimeout(function() {
 $(".myfix").removeClass("placeholder-wave").removeClass("placeholder");
-}, 6250);
+}, 5250);
 </script>
 </body>
 </html>
