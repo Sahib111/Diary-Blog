@@ -8,27 +8,6 @@
 <link rel="stylesheet" href="./css/loadingbar.css"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.13.0-alpha.1/jquery-ui.min.js" integrity="sha256-ahTP8JLHwIplWgufAohh+E04ayoLEUBEwcH04eUmIdA=" crossorigin="anonymous"></script>
-<script src="./js/loadingbar.js"></script>
-<script>
-$(".ajax-call").loadingbar
-  replaceURL: false, /* You can visibly change the URL of the browser to reflect the clicked links by toggling this to true. Default is false. May not work in old browsers. */
-	target: "#loadingbar-frame", /* The container's selector where you want the ajax result to appear. Default is #loadingbar-frame */
-	direction: "right", /* The direction where the the loading bar will progress. Default is right. */
-	
-	/* Default Ajax Parameters.  */
-	async: true, 
-	complete: function(xhr, text) {},
-	cache: true,
-	error: function(xhr, text, e) {},
-	global: true,
-	headers: {},
-	statusCode: {},
-	success: function(data, text, xhr) {},
-	dataType: "body",
-	done: function(data) {}
-});
-</script>
-
 
 <style>
 
@@ -273,8 +252,7 @@ $(".ajax-call").loadingbar
 </div>
 </div>
 
-<a href="./post.html" class="ajax call">Click me</a>
-<div id="loadingbar-frame">Hi</div>
+
 
 <!-------------MOBILE------------>
 <!-------------MOBILE------------>
