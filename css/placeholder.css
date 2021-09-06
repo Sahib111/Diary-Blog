@@ -13,6 +13,11 @@ filter:brightness(5%) contrast(5%);
 }
 
 @-webkit-keyframes placeholder-wave {
+0% {
+-webkit-mask-position: 0% 0%;
+    mask-position: 0% 0%;
+}
+
 20% {
 -webkit-mask-position: -40% 0%;
     mask-position: -40% 0%;
@@ -41,6 +46,12 @@ filter:brightness(5%) contrast(5%);
 
 
 @keyframes placeholder-wave {
+
+0% {
+-webkit-mask-position: 0% 0%;
+    mask-position: 0% 0%;
+}
+
  20% {
 -webkit-mask-position: -40% 0%;
     mask-position: -40% 0%;
