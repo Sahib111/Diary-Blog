@@ -528,6 +528,16 @@ $(".myfix").removeClass("placeholder-wave").removeClass("placeholder");
 }, 10000);
 
 <script>
+window.addEventListener('scroll', () => {  
+  const scrollTop = html.scrollTop;
+  const maxScrollTop = html.scrollHeight - window.innerHeight;
+  const scrollFraction = scrollTop / maxScrollTop;
+  const frameIndex = Math.min(
+    frameCount - 1,
+    Math.floor(scrollFraction * frameCount)
+  );
+});
+
 $(window).scroll(function(){
 $(".myfix").removeClass("placeholder-wave").removeClass("placeholder");
 });
