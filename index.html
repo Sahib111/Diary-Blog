@@ -11,6 +11,10 @@
 color:#a9a9a9;
 }
 
+.placeholder img{
+opacity:0;
+}
+
 .placeholder-wave {
   -webkit-mask-image: linear-gradient(130deg, #000 50%, rgba(0, 0, 0, 0.8) 75%, #000 100%);
   mask-image: linear-gradient(130deg, #000 50%, rgba(0, 0, 0, 0.8) 75%, #000 100%);
@@ -436,7 +440,7 @@ color:#a9a9a9;
 <script src="./js/cssmenu.js"></script>
 <script> 
 setTimeout(function() {
-$(".myfix").removeClass('placeholder-wave',7000,swing).removeClass("placeholder");
+$(".myfix").removeClass("placeholder-wave").removeClass("placeholder");
 }, 4500);
 </script>
 </body>
