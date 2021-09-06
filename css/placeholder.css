@@ -8,5 +8,5 @@ filter:brightness(5%) contrast(5%);
   -webkit-mask-size: 200% 100%;
   mask-size: 200% 100%;
   -webkit-animation: placeholder-wave 0.1s infinite;
-  animation: placeholder-wave 0.1s infinite;
+  animation: placeholder-wave 0.3s infinite;
 }
