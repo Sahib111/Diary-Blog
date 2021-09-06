@@ -11,3 +11,26 @@ filter:brightness(5%) contrast(5%);
   -webkit-animation: placeholder-wave 0.5s infinite;
   animation: placeholder-wave 0.5s infinite;
 }
+
+@-webkit-keyframes placeholder-wave {
+0%, 20%, 40%, 60%, 80% {
+-webkit-mask-position: 0% 0%;
+    mask-position: 0% 0%;
+}
+  100% {
+    -webkit-mask-position: -200% 0%;
+    mask-position: -200% 0%;
+  }
+}
+
+@keyframes placeholder-wave {
+ 0%, 20%, 40%, 60%, 80% {
+-webkit-mask-position: 0% 0%;
+    mask-position: 0% 0%;
+}
+
+100% {
+    -webkit-mask-position: -200% 0%;
+    mask-position: -200% 0%;
+  }
+}
