@@ -11,7 +11,7 @@
 <script src="./js/loadingbar.js"></script>
 <script>
 $(".ajax-call").loadingbar({
-  replaceURL: true, /* You can visibly change the URL of the browser to reflect the clicked links by toggling this to true. Default is false. May not work in old browsers. */
+  replaceURL: false, /* You can visibly change the URL of the browser to reflect the clicked links by toggling this to true. Default is false. May not work in old browsers. */
 	target: "#loadingbar-frame", /* The container's selector where you want the ajax result to appear. Default is #loadingbar-frame */
 	direction: "right", /* The direction where the the loading bar will progress. Default is right. */
 	
@@ -85,7 +85,7 @@ $(".ajax-call").loadingbar({
 </div>
 </div>
 
-<div class="container d-none mx-6 mx-md-0 mw-md-75">
+<div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
 <div class="row">
 <div class="col-md-4 col-12 mb-4">
 <div class="card"><img class="card-img-top" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> <div class="card-body"> <h5 class="card-title">Card title</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary">Go somewhere</a> </div> </div>
@@ -381,7 +381,7 @@ $(".ajax-call").loadingbar({
 </div>
 </div>
 
-<div class="container d-block mx-6 mx-md-0 mw-md-75">
+<div class="container d-none d-md-block mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
 <div class="col-md-4 col-12 mb-4 ">
 <div class="card"><img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> <div class="card-body"> <h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> <p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="./post.html" class="ajax call btn btn-primary myfix placeholder-wave placeholder">Go somewhere</a> </div> </div>
