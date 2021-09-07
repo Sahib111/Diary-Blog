@@ -5,11 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./boss.css"/>
 <title>Diary Blog Template</title>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.13.0-alpha.1/jquery-ui.min.js" integrity="sha256-ahTP8JLHwIplWgufAohh+E04ayoLEUBEwcH04eUmIdA=" crossorigin="anonymous"></script>
-
 <style>
-.progress-bar { /* Remain on top */ position: fixed; top: 0; /* Thickness & Color */ height: 5px; background:yellow; /* How fast progress happens */ transition: width .25s; /* Display on top of everything */ z-index:9999;}
+.progress-bar {
+color:#000
+transform: translate(x,y);
+position: fixed; 
+top: 0; 
+height: 20px; 
+background:yellow; 
+transition: width 5s;
+z-index:99999999999;
+}
+
 </style>
 </head>
 <body>
@@ -502,35 +509,10 @@
 </div>
 </footer>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.0-alpha.1/jquery-ui.min.js" integrity="sha256-ahTP8JLHwIplWgufAohh+E04ayoLEUBEwcH04eUmIdA=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="./js/cssmenu.js"></script>
 <script src="./js/placeholder.js"></script>
-<script>
-// The function that will take care of everything
-function updateProgressBar() {
-  // Retrieve nodes & Scroll value
-  const progressBar = document.querySelector(".progress-bar");
-  const content = document.querySelector(".very-long-content");
-  const scroll = window.pageYOffset;
-  
-  // Compute bottom part of the long content
-  const endPosition = content.offsetTop + content.offsetHeight - window.innerHeight;
-  
-  // Compute percent on a 0-100 scale
-  const progress = Math.min(Math.ceil( (scroll / endPosition) * 100), 100);
-
-  // Update progress bar
-  progressBar.style.width = `${progress}%`;
-}
-
-window.onload = function() {
-  // If user has scrolled before the page has fully loaded, update the progress bar to  ensure consistence
-  updateProgressBar();
-  
-  // On scroll, update the progress bar
-  document.addEventListener('scroll', updateProgressBar);
-}
-</script>
 </body>
 </html>
