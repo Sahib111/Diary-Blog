@@ -17,6 +17,8 @@ height:30px;
 }
 
 .bar {
+display:block;
+position:fixed;
 background-color:#db0b0b;
 width:0%;
 position:absolute;
@@ -543,8 +545,10 @@ mask-position:-200% 0%;
 <script src="./js/placeholder.js"></script>
 <script>
 $(document).ready(function() {
-  $('.bar1').click(function(){
-      $('.bar').css('width','100%');
+$('.bar1').click(loadingstyle(){
+$('.bar').css('width','100%');
+$(window).load(laadingstyle(){
+$('.bar').css('display','none');
   }); 
 });
 </script>
