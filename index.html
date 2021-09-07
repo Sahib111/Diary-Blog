@@ -30,11 +30,11 @@
 }
 
 .meter {
-  transition: width 2s ease-in-out;
-  height: 4px;
+  transition: width 8s ease-in-out;
+  height: 10px;
   display: block;
   position: relative;
-  background-color: #49A8E0;
+  background-color: #db0b0b;
 }
 
 .load {
@@ -563,7 +563,7 @@
 <script>
 $(document).ready(function() {
   $('.load').click(function(){
-      $('.meter').css('width','100%');
+      $('.meter').css('width','100%','0%');
   }); 
   $('.unload').click(function(){
       $('.meter').css('width','0%');
