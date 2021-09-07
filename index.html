@@ -7,15 +7,14 @@
 <title>Diary Blog Template</title>
 <style>
 .loader-fullscreen {
-z-index:999999999;
   position: fixed;
   display: block;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 1;
-  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
 }
 .loader-fullscreen .inner-loader {
   display: block;
@@ -27,7 +26,7 @@ z-index:999999999;
 }
 .loader-fullscreen.is-hidden {
   display: none;
-  opacity: 1;
+  opacity: 0;
 }
 
 .progress .inner-loader {
@@ -39,7 +38,7 @@ z-index:9999999999999;
   transition: width 1.5s ease-in-out;
   height: 40px;
   display: block;
-  position: relative;
+  position: fixed;
   background-color: #db0b0b;
 }
 
