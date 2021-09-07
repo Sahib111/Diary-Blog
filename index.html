@@ -8,6 +8,7 @@
 <style>
 
 .yt {
+transition:3s cubic-bezier(.02,1,.64,.04);
 background:#fff;
 position:fixed;
 width:100%;
@@ -536,6 +537,13 @@ z-index:999999999999;
 $(document).ready(function() {
 $('.bar1').click(function() {
 $('.bar').css('width','90%');
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+$('.bar1').click(function() {
+$('.yt').css('width','90%');
 });
 });
 </script>
