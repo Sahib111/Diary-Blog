@@ -29,8 +29,12 @@
   opacity: 0;
 }
 
-.meter {
+.progress .inner-loader {
 z-index:999999999;
+}
+
+.meter {
+  z-index:999999999;
   transition: width 1.5s ease-in-out;
   height: 40px;
   display: block;
@@ -38,16 +42,6 @@ z-index:999999999;
   background-color: #db0b0b;
 }
 
-.load {
- 
-  z-index:999999999;
-}
-
-.unload {
-  position: absolute;
-  top: 50px;
-  z-index: 10000;
-}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
