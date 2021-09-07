@@ -10,6 +10,36 @@
 </style>
 </head>
 <body>
+ .inner-loader {
+    display: block;    
+    height: 200px;
+  }
+  .progress {
+    width:100%;
+    margin: 0 auto;
+  }
+  &.is-hidden {
+    display: none;
+    opacity: 0;
+  }
+ }
+
+
+.meter {
+  transition: width 2s ease-in-out;
+  height: 4px;
+  display: block;
+  position: relative;
+  //I'm just a color
+  background-color: $loader-color;
+}
+
+//Test styling
+
+.load {
+  position: absolute;
+  z-index: 10000;
+}
 
 <video loop muted autoplay class="fullscreenvideo position-fixed">
 <source src="./background/children.mp4" type="video/mp4">
@@ -59,6 +89,22 @@
 </div>
 </div>
 </div>
+
+
+
+	<div class="loader-fullscreen">
+		<div class="inner-loader">
+			<div class="progress">
+			  <span class="meter" style="width: 0%;"></span>
+			</div>
+		</div>
+	</div>
+
+<a href="#" class="load">LOAD ME!</a>
+<a href="#" class="unload">Unload me!</a>
+
+
+
 
 <div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
@@ -505,7 +551,10 @@
 <script src="./js/cssmenu.js"></script>
 <script src="./js/placeholder.js"></script>
 <script>
-
+$(document).ready(function() {
+  $('.load').click(function(){
+      $('.meter').css('width','100%');
+  }); 
 </script>
 </body>
 </html>
