@@ -6,40 +6,28 @@
 <link rel="stylesheet" href="./boss.css"/>
 <title>Diary Blog Template</title>
 <style>
-.loader-fullscreen {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  transition: opacity 0.4s ease-out;
-}
-.loader-fullscreen .inner-loader {
-  display: block;
-  height: 70px;
-}
-.loader-fullscreen .progress {
-  width: 100%;
-  margin: 0 auto;
-}
-.loader-fullscreen.is-hidden {
-  display: none;
-  opacity: 0;
+
+.yt {
+position:fixed;
+width:100%;
+top:0;
+left:0;
+display:block;
+height:100px;
 }
 
-.progress .inner-loader {
-z-index:9999999999999;
+.bar {
+width:0%;
+position:absolute;
+height:50px;
+top:0;
+left:0;
+transition:12s;
 }
 
-.meter {
-  z-index:99999999999999!important;
-  transition: width 1.5s ease-in-out;
-  height: 40px;
-  display: block;
-  position: fixed;
-  background-color: #db0b0b;
+.bar:active {
+transition:12s;
+width:100%;
 }
 
 </style>
@@ -96,18 +84,15 @@ z-index:9999999999999;
 </div>
 </div>
 
-<div class="loader-fullscreen">
-<div class="inner-loader">
-<div class="progress">
-<span class="meter" style="width: 0%;"></span>
+<div class="yt">
+<span class="bar"></span>
 </div>
-</div>
-</div>
+
 
 <div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
 <div class="col-md-4 col-12 mb-4 ">
-<div class="load card"><img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> <div class="card-body"> <h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> <p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="gjg" class="btn btn-primary myfix placeholder-wave placeholder">Go somewhere</a> </div> </div>
+<div class="card"><img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> <div class="card-body"> <h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> <p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="bar btn btn-primary myfix placeholder-wave placeholder">Go somewhere</a> </div> </div>
 </div>
 <div class="col-md-4 col-12 mb-4 ">
 <div class="card"><img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> <div class="card-body"> <h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> <p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" class="btn btn-primary myfix placeholder-wave placeholder">Go somewhere</a> </div> </div>
@@ -551,7 +536,7 @@ z-index:9999999999999;
 <script>
 $(document).ready(function() {
   $('.load').click(function(){
-      $('.meter').css('width','100%');
+      $('.bar').css('width','100%');
   }); 
 });
 </script>
