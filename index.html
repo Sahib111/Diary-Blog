@@ -6,33 +6,45 @@
 <link rel="stylesheet" href="./boss.css"/>
 <title>Diary Blog Template</title>
 <style>
- .inner-loader {
-    display: block;    
-    height: 200px;
-  }
-  .progress {
-    width:100%;
-    margin: 0 auto;
-  }
-  &.is-hidden {
-    display: none;
-    opacity: 0;
-  }
- }
+.loader-fullscreen {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.2s ease-out;
+}
+.loader-fullscreen .inner-loader {
+  display: block;
+  height: 200px;
+}
+.loader-fullscreen .progress {
+  width: 100%;
+  margin: 0 auto;
+}
+.loader-fullscreen.is-hidden {
+  display: none;
+  opacity: 0;
+}
 
 .meter {
   transition: width 2s ease-in-out;
   height: 4px;
   display: block;
   position: relative;
-  //I'm just a color
-  background-color: #000;
+  background-color: #49A8E0;
 }
-
-//Test styling
 
 .load {
   position: absolute;
+  z-index: 10000;
+}
+
+.unload {
+  position: absolute;
+  top: 50px;
   z-index: 10000;
 }
 </style>
@@ -555,6 +567,9 @@ $(document).ready(function() {
   $('.load').click(function(){
       $('.meter').css('width','100%');
   }); 
+  $('.unload').click(function(){
+      $('.meter').css('width','0%');
+  });   
 });
 </script>
 </body>
