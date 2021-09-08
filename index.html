@@ -65,6 +65,12 @@
 </div>
 </div>
 
+<div id="box">
+<h2>Click button to load new content inside DIV box</h2>
+</div>
+<button type="button">Load Content</button>
+
+
 <div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
 <div class="col-md-4 col-12 mb-4 ">
@@ -513,8 +519,8 @@
 <script src="./js/youtubelikeloader.js"></script>
 <script>
 $(document).ready(function(){
-$("#a").click(function(){
-$(".card-body").load("/post.html");
+$("button").click(function(){
+$("#box").load("/posting.html");
 });
 });
 </script>
