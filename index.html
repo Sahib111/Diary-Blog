@@ -6,35 +6,7 @@
 <link rel="stylesheet" href="./boss.css"/>
 <title>Diary Blog Template</title>
 <style>
-.container {
-  display: inline-block;
-  cursor: pointer;
-}
 
-.barr1, .barr2, .barr3 {
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .barr1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .barr2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .barr3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
-}
 </style>
 </head>
 <body>
@@ -60,12 +32,6 @@
 <!-------------MOBILE------------>
 <!-------------MOBILE------------>
 <br/>
-
-<div class="container" onclick="hamBurger(this)">
-<div class="barr1"></div>
-<div class="barr2"></div>
-<div class="barr3"></div>
-</div>
 
 <div class="mb-3 mx-0 d-block d-md-none myfix placeholder-wave placeholder">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -545,9 +511,5 @@
 <script src="./js/cssmenu.js"></script>
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
-<script>
-function hamBurger(x) {
-x.classList.toggle("change");
-});
 </body>
 </html>
