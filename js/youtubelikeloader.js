@@ -16,5 +16,7 @@ $('.yt').css('width','100%',);
 
 $(document).ready(function() {
 $('.bar').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) { 
+$('.bar').fadeOut(3000);
+$('.yt').fadeOut(3000);
 });
 });
