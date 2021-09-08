@@ -1,3 +1,4 @@
+$(document).ready(){
 $(".myfix-1").click(f1(){
 $("#box-1").load("./data/post-1.html");
 });
@@ -44,4 +45,5 @@ $("#box-11").load("./data/post-11.html");
 
 $(".myfix-12").click(f12(){
 $("#box-12").load("./data/post-12.html");
+});
 });
