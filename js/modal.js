@@ -1,4 +1,4 @@
-$(window).load(function() {
+$(document).ready(function() {
 $(".myfix-1").click(function(){
 $("#box-1").load("./data/post-1.html");
 });
