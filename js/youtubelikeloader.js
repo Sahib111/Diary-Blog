@@ -6,8 +6,8 @@ $('.yt').css('width','90%',);
 });
 
 $(document).ready(function() { 
-$('div').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) { 
-$('.bar').css('display','none');
-$('.yt').css('display','none',);
+$('.bar').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) { 
+$('.bar').css('width','0%');
+$('.yt').css('width','0%',);
 });
 });
