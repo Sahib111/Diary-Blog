@@ -66,10 +66,6 @@
 </div>
 </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="myfix btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
 
 <div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
@@ -85,11 +81,11 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Post-1</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div id="box"></div>
+        <div id="box-1"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -546,7 +542,7 @@
 <script>
 $(document).ready(function(){
 $(".myfix").click(function(){
-$("#box").load("./post.html");
+$("#box-1").load("./post-1.html");
 });
 });
 </script>
