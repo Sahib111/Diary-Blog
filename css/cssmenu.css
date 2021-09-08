@@ -1,3 +1,19 @@
+.firstwall:hover {
+background:url("");
+}
+
+.secondwall:hover {
+background:url("");
+}
+
+.thirdwall:hover {
+background:url("");
+}
+
+.fourthwall:hover {
+background:url("");
+}
+
 #menuDemo {
 text-align:center; 
 padding:30px 8px; 
