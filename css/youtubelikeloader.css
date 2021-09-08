@@ -1,5 +1,5 @@
 .yt {
-transition:3s cubic-bezier(.02,1,.64,.04);
+transition:18s cubic-bezier(.02,1,.64,.04);
 background:#fff;
 position:fixed;
 width:0%;
@@ -18,6 +18,6 @@ position:fixed;
 height:4px;
 top:0;
 left:0;
-transition:3s cubic-bezier(.02,1,.64,.04);
+transition:18s cubic-bezier(.02,1,.64,.04);
 z-index:999999999999;
 }
