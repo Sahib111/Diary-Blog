@@ -66,7 +66,9 @@
 </div>
 </div>
 
-<div id="box"></div>
+<div id="box">
+<span onclick="goBack()">X</span>
+</div>
 
 <div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
@@ -521,6 +523,11 @@ $(".myfix").click(function(){
 $("#box").load("./post.html");
 });
 });
+</script>
+<script>
+function goBack() {
+window.history.back();
+}
 </script>
 </body>
 </html>
