@@ -79,14 +79,14 @@ text-transform:none;
 letter-spacing:normal;   
 display:block;   
 position:relative;
-transition:all 0.3s;
+transition:all 1s;
 }
 
 #cssmenu li:hover > span, #cssmenu li:hover > a {  
 -webkit-text-stroke-width:;
 -webkit-text-stroke-color:;
 letter-spacing:3px;
-transition:0.25s;
+transition:1s;
 color:#428fcf;
 font-size:11vw;
 font-weight:900!important;
