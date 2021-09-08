@@ -1,7 +1,13 @@
 $(document).ready(function() {
 $('.bar1').click(function() {
-$('.bar').animate('width','90%');
-$('.yt').animate('width','90%',);
-}, 3000);
+$('.bar').css('width','90%');
+$('.yt').css('width','90%',);
+});
+});
+
+$(document).ready(function() { 
+$('div').on('transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd', function(event) { 
+$('.bar').css('display','none');
+$('.yt').css('display','none',);
 });
 });
