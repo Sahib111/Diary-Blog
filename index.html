@@ -65,6 +65,8 @@
 </div>
 </div>
 
+<div id="boxing"></div>
+
 <div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
 <div class="row" aria-hidden="true">
 <div class="col-md-4 col-12 mb-4 ">
@@ -511,5 +513,12 @@
 <script src="./js/cssmenu.js"></script>
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
+<script>
+$(document).ready(function(){
+$(".btn").click(function(){
+$("#boxing").load("/post.html #body");
+});
+});
+</script>
 </body>
 </html>
