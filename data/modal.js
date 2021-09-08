@@ -1,6 +1,6 @@
 $(document).ready(function(){
 $(".myfix").click(function(){
-$("#box-1").load("./post-1.html");
+$("#box-1").load("./data/post-1.html");
 });
 });
 
