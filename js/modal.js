@@ -1,3 +1,4 @@
+$(window).load(function() {
 $(".myfix-1").click(function(){
 $("#box-1").load("./data/post-1.html");
 });
@@ -33,4 +34,5 @@ $("#box-11").load("./data/post-11.html");
 });
 $(".myfix-12").click(function(){
 $("#box-12").load("./data/post-12.html");
+});
 });
