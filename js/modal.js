@@ -7,19 +7,19 @@ return;
 });
 $("#myfix-2").click(function(){
 $("#box-2").load("./data/post-2.html");
-$(window).on("beforeunload", function() {
+$(window).on("unload", function() {
 return;
 });
 });
 $("#myfix-3").click(function(){
 $("#box-3").load("./data/post-3.html");
-$(window).on("beforeunload", function() {
+$(window).on("unload", function() {
 return;
 });
 });
 $("#myfix-4").click(function(){
 $("#box-4").load("./data/post-4.html");
-$(window).on("beforeunload", function() {
+$(window).on("unload", function() {
 return;
 });
 });
