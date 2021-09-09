@@ -624,14 +624,10 @@
 <script src="./js/youtubelikeloader.js"></script>
 <script>
 $("#myfix-1").click(function(){
-$.ajax({url: "./data/post-1.html", success: function(result){
-$("#box-1").html(result);
-});
+$("#box-1").load("./data/post-1.html");
 });
 $("#myfix-2").click(function(){
-$.ajax({url: "./data/post-2.html", success: function(result){
-$("#box-1").html(result);
-});
+$("#box-1").load("./data/post-2.html");
 });
 </script>
 </body>
