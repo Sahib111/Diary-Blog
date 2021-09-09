@@ -1,4 +1,4 @@
-$(function(){
+$(function Loading(){
 $("#myfix-1").click(function(){
 $("#box-1").load("./data/post-1.html")});
 $("#myfix-2").click(function(){
@@ -24,3 +24,7 @@ $("#box-11").load("./data/post-11.html")});
 $("#myfix-12").click(function(){
 $("#box-12").load("./data/post-12.html")});
 });
+
+
+$(".btn-close").click(function(){
+$(".modal").on('unload','function Loading()')});
