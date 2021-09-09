@@ -625,7 +625,8 @@
 <script>
 $(function(){
 $(".btn-close").click(function(){
-$('.x').detach();
+$('.modal-body').detach();
+$('.myfix').append(.modal-body);
 });
 });
 </script>
