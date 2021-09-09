@@ -625,12 +625,12 @@
 <script>
 $("#myfix-1").click(function(){
 $.ajax({url: "./data/post-1.html", success: function(result){
-$(".modal-body").html(result);
+$("#box-1").html(result);
 });
 });
 $("#myfix-2").click(function(){
 $.ajax({url: "./data/post-2.html", success: function(result){
-$(".modal-body").html(result);
+$("#box-1").html(result);
 });
 });
 </script>
