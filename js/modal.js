@@ -13,3 +13,7 @@ $("#box-2").html(result);
 }});
 });
 });
+
+$(.btn-close).unload(function() {
+  return "Bye now!";
+});
