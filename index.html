@@ -623,14 +623,18 @@
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
 <script>
-$(function(){
-$("#myfix-1").click(function(){
-$('#box-1').append();
-});
-$("#myfix-2").click(function(){
-$('#box-2').append();
-});
-});
+$("#myfix-1").click(function() {  
+  $( this ).toggleClass( "off" );  
+});  
+var p;  
+$("myfix-1").click(function() {  
+  if (p) {  
+    p.appendTo( "box-1" );  
+    p = null;  
+  } else {  
+    p = $("#box-1").detach();  
+  }  
+});  
 </script>
 </body>
 </html>
