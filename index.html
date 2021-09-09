@@ -627,7 +627,7 @@ $("#myfix-1").click(function(){
   $.ajax({url: "./data/post-1.html", success: function(result){
     $("#box-1").html(result);
 $(".btn-close").click(function(){
-return false;
+$("#box-1).html();
 });
 });
 $("#myfix-2").click(function(){
