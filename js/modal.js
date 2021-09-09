@@ -1,19 +1,27 @@
-$(function Loading(){
+$(function(){
 $("#myfix-1").click(function(){
 $("#box-1").load("./data/post-1.html");
+$(window).on("beforeunload", function(e) {
 return false;
+});
 });
 $("#myfix-2").click(function(){
 $("#box-2").load("./data/post-2.html");
+$(window).on("beforeunload", function(e) {
 return false;
+});
 });
 $("#myfix-3").click(function(){
 $("#box-3").load("./data/post-3.html");
+$(window).on("beforeunload", function(e) {
 return false;
+});
 });
 $("#myfix-4").click(function(){
 $("#box-4").load("./data/post-4.html");
+$(window).on("beforeunload", function(e) {
 return false;
+});
 });
 $("#myfix-5").click(function(){
 $("#box-5").load("./data/post-5.html");});
@@ -32,3 +40,4 @@ $("#box-11").load("./data/post-11.html");});
 $("#myfix-12").click(function(){
 $("#box-12").load("./data/post-12.html");});
 });
+
