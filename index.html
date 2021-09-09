@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./boss.css"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="./js/modal.js"></script>
+
 <title>Diary Blog Template</title>
 <style>
 </style>
@@ -623,18 +623,16 @@
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
 <script>
-$("#myfix-1").click(function() {  
-  $( this ).toggleClass( "off" );  
-});  
-var p;  
-$("myfix-1").click(function() {  
-  if (p) {  
-    p.appendTo( "box-1" );  
-    p = null;  
-  } else {  
-    p = $("#box-1").detach();  
-  }  
-});  
+$("#myfix-1").click(function(){
+  $.ajax({url: "./data/post-1.html", success: function(result){
+    $("#box-1").html(result);
+  }});
+});
+$("#myfix-2").click(function(){
+  $.ajax({url: "./data/post-2.html", success: function(result){
+    $("#box-2").html(result);
+  }});
+});
 </script>
 </body>
 </html>
