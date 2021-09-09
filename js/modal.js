@@ -1,14 +1,4 @@
-$(document).ready(function(){
-$("#myfix-1").click(function(){
-$("#box-1").load("./data/post-1.html");
-});
-});
 
-$(document).ready(function(){
-$("#myfix-2").click(function(){
-$("#box-2").load("./data/post-2.html");
-});
-});
 
 $(document).ready(function(){
 $("#myfix-3").click(function(){
