@@ -8,6 +8,47 @@
 <script src="./js/modal.js"></script>
 <title>Diary Blog Template</title>
 <style>
+.fullscreen {
+  clip-path: circle(0% at 96.5% 4%);
+  position: absolute;
+  background: #1e1f25;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    li {
+      padding: 0.5rem 1rem;
+
+      a {
+        font-size: 1.5rem;
+        background: -webkit-linear-gradient(
+          45deg,
+          rgba(182, 143, 213, 1) 0%,
+          rgba(255, 174, 174, 0.68531162464986) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 1.3rem;
+    right: 2.355rem;
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(45deg);
+}
 </style>
 </head>
 <body>
@@ -33,6 +74,28 @@
 <!-------------MOBILE------------>
 <!-------------MOBILE------------>
 <br/>
+
+<header class="header">
+<div class="logo"><a href="/">Logo</a></div>
+<div class="hambergur">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<nav class="navbar fullscreen">
+<ul>
+<li style="--animation-order: 1;"><a href="/">Home</a></li>
+<li style="--animation-order: 2;"><a href="/">About</a></li>
+<li style="--animation-order: 3;"><a href="/">Contact</a></li>
+<li style="--animation-order: 4;"><a href="/">services</a></li>
+<li style="--animation-order: 5;"><a href="/">Blogs</a></li>
+</ul>
+    
+<div class="close">
+<div></div>
+</div>
+</nav>
+</header>
 
 <div class="mb-3 mx-0 d-block d-md-none myfix placeholder-wave placeholder">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -710,5 +773,14 @@
 <script src="./js/cssmenu.js"></script>
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
+<script>
+$(".hambergur").on("click", () => {
+$(".fullscreen").toggleClass("active").removeClass("reverse_anim");
+});
+
+$(".close").on("click", () => {
+$(".fullscreen").toggleClass("reverse_anim");
+});
+</script>
 </body>
 </html>
