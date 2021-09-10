@@ -21,7 +21,7 @@ right:10px;
   border-radius: 5px;
 }
 .hambergur div:nth-child(2) {
-  width: 1.2rem;
+  width: 2.5rem;
   background: #fff;
 }
 
@@ -42,11 +42,8 @@ z-index:1000000000;
   transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
 }
 .fullscreen ul {
-left:50%;
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 100%;
 }
 .fullscreen ul li {
@@ -76,6 +73,7 @@ z-index:1000000000;
 }
 .fullscreen .close div:before, .fullscreen .close div:after {
   content: "";
+z-index:1000000000;
   width: 2rem;
   height: 2px;
   border: 1px solid red;
