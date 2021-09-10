@@ -10,17 +10,17 @@
 <style>
 
 .hambergur {
-  width: 1.6rem;
+  width: 2.5rem;
 }
 .hambergur div {
-  width: 1.6rem;
-  height: 2px;
+  width: 2rem;
+  height: 5px;
   border: 1px solid #fff;
   margin-bottom: 5px;
   border-radius: 5px;
 }
 .hambergur div:nth-child(2) {
-  width: 1.3rem;
+  width: 2rem;
   background: #fff;
 }
 
@@ -29,12 +29,13 @@ ul {
 }
 
 .fullscreen {
+z-index:1000000000;
   -webkit-clip-path: circle(0% at 96.5% 4%);
           clip-path: circle(0% at 96.5% 4%);
   position: absolute;
   background: #1e1f25;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
