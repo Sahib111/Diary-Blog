@@ -8,106 +8,7 @@
 <script src="./js/modal.js"></script>
 <title>Diary Blog Template</title>
 <style>
-nav {
-height:100%;
-width:100%;
-}
 
-#menuToggle {
-background-color:#fff;
-display: block;
-position: relative;
-top: 50px;
-left: 50px;
-z-index: 10000000000;
--webkit-user-select: none;
-user-select: none;
-}
-
-#menuToggle a {
-text-decoration: none;
-color: #232323;
-transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-color: tomato;
-}
-
-#menuToggle input {
-display: block;
-width: 40px;
-height: 32px;
-position: absolute;
-top: -7px;
-left: -5px;
-cursor: pointer;
-opacity: 0;
-z-index: 20000000000;
--webkit-touch-callout: none;
-}
-
-#menuToggle span {
-display: block;
-width: 33px;
-height: 4px;
-margin-bottom: 5px;
-position: relative;
-background: #000;
-border-radius: 3px;
-z-index: 10000000000;
-transform-origin: 4px 0px;
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-            opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-opacity: 1;
-transform: rotate(45deg) translate(-2px, -1px);
-background: #232323;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-opacity: 0;
-transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-position: absolute;
-width: 100%;
-margin: -100px 0 0 -50px;
-padding: 50px;
-padding-top: 125px;
-background: #ededed;
-list-style-type: none;
--webkit-font-smoothing: antialiased;
-transform-origin: 0% 0%;
-transform: translate(-100%, 0);
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li {
-padding: 10px 0;
-font-size: 22px;
-}
-
-#menuToggle input:checked ~ ul {
-transform: none;
-}
 
 </style>
 </head>
@@ -135,21 +36,26 @@ transform: none;
 <!-------------MOBILE------------>
 <br/>
 
-<nav role="navigation">
-<div id="menuToggle">
-<input type="checkbox"/>
-<span></span>
-<span></span>
-<span></span>
-<ul id="menu">
-<a href="#"><li>Home</li></a>
-<a href="#"><li>About</li></a>
-<a href="#"><li>Info</li></a>
-<a href="#"><li>Contact</li></a>
-<a href="#"><li>Show me more</li></a>
-</ul>
+<div id="topNav" class="navigation">
+<span id="closebtn" onclick="navToggle()">
+<span class="line1"></span>
+<span class="line2"></span>
+<span class="line3"></span>
+</span>
+<div class="logo">
+<img src=""/>
 </div>
-</nav>
+
+<ul class="menulist">
+<li><a class="menuitems" href="#">ABOUT</a></li>		
+<li><a class="menuitems" href="#">CASE STUDIES</a></li>				
+<li><a class="menuitems" href="#">CONTACT</a></li>
+<li><a class="menuitems" href="#">RESUME</a></li>
+</ul>			
+</div>
+
+<div id="main">
+</div>
 
 <div class="mb-3 mx-0 d-block d-md-none myfix placeholder-wave placeholder">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -828,7 +734,26 @@ transform: none;
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
 <script>
-
+    	for (i = 0; i < menu.length; i++){
+	menu[i].style.opacity="0.0";
+	menu[i].style.marginTop="100px";
+	};
+    	document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+	
+	} 
+	//to open
+	else if (nav.style.height <= "50px") {
+	nav.style.height = "275px";
+	main.style.marginTop = "275px";
+    	var i = 0;
+    	for (i = 0; i < menu.length; i++){
+	menu[i].style.opacity="1.0";
+	menu[i].style.marginTop="0px";
+	};
+    	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	
+	}
+};
 </script>
 </body>
 </html>
