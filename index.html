@@ -11,16 +11,17 @@
 
 .hambergur {
   width: 2.5rem;
+right:10px;
 }
 .hambergur div {
-  width: 2rem;
-  height: 5px;
+  width: 5rem;
+  height: 15px;
   border: 1px solid #fff;
   margin-bottom: 5px;
   border-radius: 5px;
 }
 .hambergur div:nth-child(2) {
-  width: 2rem;
+  width: 1.2rem;
   background: #fff;
 }
 
@@ -59,6 +60,7 @@ left:50%;
   -webkit-text-fill-color: transparent;
 }
 .fullscreen .close {
+z-index:1000000000;
   position: absolute;
   top: 1.3rem;
   right: 2.355rem;
@@ -67,6 +69,7 @@ left:50%;
   transform: rotate(45deg);
 }
 .fullscreen .close div {
+z-index:1000000000;
   width: 32px;
   height: 32px;
   overflow: hidden;
@@ -81,6 +84,7 @@ left:50%;
 }
 .fullscreen .close div:after {
   transform: rotate(90deg);
+z-index:1000000000;
   background: red;
 }
 .fullscreen.active {
