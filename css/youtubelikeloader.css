@@ -5,14 +5,14 @@ position:fixed;
 width:0%;
 top:0;
 left:0;
-display:block;
+display:inline-block;
 height:4px;
 z-index:99999999999;
 }
 
 .bar {
 background-color:#E3242B;
-display:block;
+display:inline-block;
 width:0%;
 position:fixed;
 height:4px;
