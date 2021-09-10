@@ -9,126 +9,6 @@
 <title>Diary Blog Template</title>
 <style>
 
-.navigation {
-    width: 100%;
-    position: fixed;
-    z-index: 10000000000;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 4px -3px #232323;
-    -moz-box-shadow: 0 4px 4px -3px #232323;
-    -webkit-box-shadow: 0 4px 4px -3px #232323;
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-    
-}
-
-.navigation a {
-    text-decoration: none;
-}
-
-.navigation ul {
-    margin-top:30px;
-    text-align:center;
-    list-style:none; 
-    margin-left:auto;
-    margin-right:auto;
-}
-
-
-.menulist {
-    width:auto;
-}
-
-
-.logo {
-    text-align:center;
-    margin:0 auto;
-}
-
-.line1, .line2, .line3 {
-  margin-top:5px;
-  background-color:#fff;
-  width:40px;
-  height:10px;
-  display:block;
-  position:relative;
-  opacity:1;
-  border-radius:15%;
-  transition: all .3s;
-}
-
-.line1.active {
-  transform: rotate(270deg);
-  opacity:0.0;
-  background-color:yellow;
-  top:5px;
-}
-
-.line2.active {
-  transform: rotate(45deg);
-  background-color:yellow;
-}
-
-.line3.active {
-  transform: rotate(-45deg);
-  background-color:yellow;
-  top:-7px;
-}
-
-.menuitems {
-    padding-top:12px;
-    padding-bottom:12px;
-    text-decoration: none;
-    list-style:none; 
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    display: inline-block;
-    position:relative;	
-    text-align:center;
-    color: #fff;
-    opacity:0.0;
-    transition: all .5s ease-in-out;
-}
-
-.menuitems:after {
-  content:'';
-  display:block;
-  width: 0;
-  height: 1px;
-  background: #fff;
-  transition: width .2s;
-}
-
-.menuitems:hover::after {
-    width:100%;
-}
-
-#closebtn {
-    height:25px;
-    width:25px;	
-    position: absolute;
-    text-decoration:none;
-    top: 10px;
-    left: 25px;
-    font-size: 36px !important;
-    margin-right: 50px;
-    z-index:100;
-    color:#fff;
-    cursor:pointer;
-    trainsition:background-position .3s;
-}
-
-#main {	
-    transition: margin-top .4s;
-    text-align:center;
-    margin:auto;
-    padding: 16px;
-    font-size:30px;
-}
-
 </style>
 </head>
 <body>
@@ -153,28 +33,8 @@
 <!-------------MOBILE------------>
 <!-------------MOBILE------------>
 <!-------------MOBILE------------>
+
 <br/>
-
-<div id="topNav" class="navigation">
-<span id="closebtn" onclick="navToggle()">
-<span class="line1"></span>
-<span class="line2"></span>
-<span class="line3"></span>
-</span>
-<div class="logo">
-<img src=""/>
-</div>
-
-<ul class="menulist">
-<li><a class="menuitems" href="#">ABOUT</a></li>		
-<li><a class="menuitems" href="#">CASE STUDIES</a></li>				
-<li><a class="menuitems" href="#">CONTACT</a></li>
-<li><a class="menuitems" href="#">RESUME</a></li>
-</ul>			
-</div>
-
-<div id="main">
-</div>
 
 <div class="mb-3 mx-0 d-block d-md-none myfix placeholder-wave placeholder">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -528,7 +388,26 @@
 <!----------NON-MOBILE----------->
 <!----------NON-MOBILE----------->
 
+<div class='menu-icon-wrapper-2 d-none d-md-block myfix placeholder'>
+<div style='text-align:center; bottom:-40px;'/>
+<div class='menu-icon-2' onclick='toggleCssMenu(this)'>		
+<div class='three-line-2'>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
 
+<div id='cssmenu-2'>
+<ul>
+<li><a href='#'>Home</a></li>
+<li><a href='#'>About Us</a></li>
+<li><a href='#'>Privacy Policy</a></li>
+<li><a href='#'>Terms and Conditions</a></li>
+</ul>
+</div>
+</div>
 
 <div class="mb-3 mx-0 d-none d-md-block myfix placeholder">
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -853,26 +732,7 @@
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
 <script>
-    	for (i = 0; i < menu.length; i++){
-	menu[i].style.opacity="0.0";
-	menu[i].style.marginTop="100px";
-	};
-    	document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
-	
-	} 
-	//to open
-	else if (nav.style.height <= "50px") {
-	nav.style.height = "275px";
-	main.style.marginTop = "275px";
-    	var i = 0;
-    	for (i = 0; i < menu.length; i++){
-	menu[i].style.opacity="1.0";
-	menu[i].style.marginTop="0px";
-	};
-    	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-	
-	}
-};
+
 </script>
 </body>
 </html>
