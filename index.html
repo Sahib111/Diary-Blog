@@ -8,7 +8,7 @@
 <script src="./js/modal.js"></script>
 <title>Diary Blog Template</title>
 <style>
-#menuDemo-2 {
+#menuDemo2 {
 text-align:center; 
 padding:30px 8px; 
 position:fixed;
@@ -18,7 +18,7 @@ width:100%;
 z-index:100000000;
 }
 
-#cssmenu-2{
+#cssmenu2{
 position:fixed;
 z-index:1;
 display:block;
@@ -29,7 +29,7 @@ text-align:center;
 font-family:Spectral;
 }
 
-#cssmenu-2::before{
+#cssmenu2::before{
 position:absolute;
 content:"";
 z-index:-1;
@@ -45,7 +45,7 @@ filter:brightness(30%);
 display:block;
 }
 
-#cssmenu-2 ul {
+#cssmenu2 ul {
 top: 50%;
 left: 50%;
 -ms-transform: translate(-50%, -50%);
@@ -65,7 +65,7 @@ z-index:999999990;
 border-radius: 3px;
 } 
 
-#cssmenu-2 li {
+#cssmenu2 li {
 display:inline-block;
 line-height:1.2;
 position:relative;    
@@ -79,7 +79,7 @@ font-family: 'Hind Siliguri', sans-serif;
 
 ---------------------------------------*/
 
-#cssmenu-2 >ul>li>span, #cssmenu-2 >ul>li>a {   
+#cssmenu2 >ul>li>span, #cssmenu2 >ul>li>a {   
 font-size:30px;
 color:inherit;
 text-decoration:none;
@@ -92,7 +92,7 @@ position:relative;
 transition:all 0.3s;
 }
 
-#cssmenu-2 li:hover > span, #cssmenu-2 li:hover > a {  
+#cssmenu2 li:hover > span, #cssmenu2 li:hover > a {  
 -webkit-text-stroke-width:;
 -webkit-text-stroke-color:;
 letter-spacing:3px;
@@ -106,7 +106,7 @@ margin-right:1vw;
 
 /*Sub level items
 ---------------------------------------*/
-#cssmenu-2 .dropdown
+#cssmenu2 .dropdown
 {
     text-align:left;
     left:0;
@@ -121,11 +121,11 @@ margin-right:1vw;
     cursor:default;
 }
 
-#cssmenu-2 .dropdown li {
+#cssmenu2 .dropdown li {
     display: block;  
 }
 
-#cssmenu-2 .dropdown li > span, #cssmenu-2 .dropdown li > a, #cssmenu-2 .clm a, #cssmenu-2 .clm h3 
+#cssmenu2 .dropdown li > span, #cssmenu2 .dropdown li > a, #cssmenu-2 .clm a, #cssmenu-2 .clm h3 
 {
     font-size:18px;
     font-weight:400;
@@ -136,64 +136,64 @@ margin-right:1vw;
     color:inherit;
     text-decoration:none;
 }
-#cssmenu-2 .clm h3 {
+#cssmenu2 .clm h3 {
     font-size:20px;
     font-weight:700;
 }
-#cssmenu-2 .sub-item {
+#cssmenu2 .sub-item {
     background-color:#222222;
     position:relative;       
     transition:all 0.3s;
 }
 
-#cssmenu-2 .dropdown li:hover > span, #cssmenu-2 .dropdown li:hover > a
+#cssmenu2 .dropdown li:hover > span, #cssmenu2 .dropdown li:hover > a
 {
 color:#FFFFFF;
-    background-color:#222222;
+background-color:#222222;
 }
 
-#cssmenu-2 .clm a:hover
+#cssmenu2 .clm a:hover
 {
     color:#FFFFFF;
     transition:color 0.2s;
 }
 
-#cssmenu-2 .dropdown.right0 {left:auto;right:0;} 
-#cssmenu-2 .dropdown li > .dropdown.right0 {left:auto;right:100%;} 
+#cssmenu2 .dropdown.right0 {left:auto;right:0;} 
+#cssmenu2 .dropdown li > .dropdown.right0 {left:auto;right:100%;} 
        
-#cssmenu-2 li.full-width{
+#cssmenu2 li.full-width{
     position:static;
 }
-#cssmenu-2 li.full-width .dropdown{
+#cssmenu2 li.full-width .dropdown{
     width:100%;
     left:0;
     box-sizing:border-box;
 }  
 
-#cssmenu-2 li:hover > .dropdown
+#cssmenu2 li:hover > .dropdown
 {
     display:block;
     opacity:1;
     z-index:1;
 }
 
-#cssmenu-2 .dropdown li > .dropdown
+#cssmenu2 .dropdown li > .dropdown
 {
     left:100%; right:auto;
     top:0;
 }
 
-#cssmenu-2 ul.dropdown
+#cssmenu2 ul.dropdown
 {
     min-width:240px; /* Sub level menu min width */
 }
 
-#cssmenu-2 div.dropdown  {
+#cssmenu2 div.dropdown  {
     text-align:center;
 }
 
 /* each column */
-#cssmenu-2 .clm
+#cssmenu2 .clm
 {
     text-align:left;
     margin:20px;
@@ -205,14 +205,14 @@ color:#FFFFFF;
     *zoom:1;
 }
 
-#cssmenu-2 .clm a:hover
+#cssmenu2 .clm a:hover
 {
     color:#FFFFFF;
     text-decoration:underline;
 }
 
 /*-----------Arrows----------------*/
-#cssmenu-2 .arrow {
+#cssmenu2 .arrow {
     color:#000;
     border-style:solid; border-width:3px 3px 0 0; padding:8px; transform:rotate(135deg);margin-top:-15.5px;margin-left:8px;
     position:relative;
@@ -223,7 +223,7 @@ color:#FFFFFF;
     overflow:hidden;/*for IE6*/
 }
         
-#cssmenu-2 .dropdown .arrow {
+#cssmenu2 .dropdown .arrow {
     transform:rotate(45deg);
     top:50%;margin-top:-11px;
     position:relative;top:auto;
@@ -231,15 +231,15 @@ color:#FFFFFF;
 
 /*######## styles for mobile mode */
 
-.menu-icon-2 {
+.menu-icon2 {
     display: none;
 }
 
 @media only screen and (max-width: 99999px) {
 
-    .menu-icon-2 {display:inline-block;}
+    .menu-icon2 {display:inline-block;}
 
-    #cssmenu-2  {
+    #cssmenu2  {
         width:100%;
         max-width:100%;
         display:none;
@@ -251,27 +251,27 @@ color:#FFFFFF;
 
     /*--begin mark1--*/
 
-    #cssmenu-2  {
+    #cssmenu2  {
         position:fixed;top:0;bottom:0;left:0;right:0;height:100%!important;
         left:0;
         bottom:auto; box-shadow:0 4px 18px rgba(0,0,0,0.3);
         transition:all 2011ms cubic-bezier(.17,.67,.83,.67);
     }
 
-    #cssmenu-2.active {
+    #cssmenu2.active {
         animation:fadeIn!important;
         animation-duration:2s!important;
         transition:all 2011ms cubic-bezier(.16,.76,.45,1);
     }
 
-    #mcmenu-2 {z-index:1000000004;}
+    #mcmenu2 {z-index:1000000004;}
 -fixed-bg {background:#000;z-index:1000000000;}
 -fixed-bg.showing {display:block;opacity:0;}-fixed-bg.active {opacity:0.4;}
-.menu-icon-2.active {position:fixed;top:12px;right:12px;z-index:1000000006;}
+.menu-icon2.active {position:fixed;top:12px;right:12px;z-index:1000000006;}
 
 /*--end mark1--*/
 
-    #cssmenu-2 ul  {
+    #cssmenu2 ul  {
         background-color:transparent;
         transition:all 411ms ease;
         box-sizing:border-box;
@@ -279,28 +279,28 @@ color:#FFFFFF;
         border-radius: 0;
     }
 
-    #cssmenu-2 .mobileHide {
+    #cssmenu2 .mobileHide {
         display:none;
     }
 
-    #cssmenu-2 li {
+    #cssmenu2 li {
         text-align:center;
         display:block;
         position:static;
     }
 
-    #cssmenu-2 >ul>li>span, #cssmenu-2 >ul>li>a 
+    #cssmenu2 >ul>li>span, #cssmenu2 >ul>li>a 
     {       
         font-size:8vw;
     }
-    #cssmenu-2 li:hover span, #cssmenu-2 li:hover a {
+    #cssmenu2 li:hover span, #cssmenu2 li:hover a {
      
         color:#FFFFFF;
         background-color:#000000;
     }*/
 }
 /*----------- menu-icon ----------------*/
-.menu-icon-wrapper-2 {
+.menu-icon-wrapper2 {
 float:right;
 bottom:20px;
 right:20px;
@@ -308,7 +308,7 @@ position:fixed;
 z-index:1054;
 }
 
-.menu-icon-2 {
+.menu-icon2 {
 margin-top:-8px;
     padding:15px!important;
     cursor: pointer;
@@ -324,11 +324,11 @@ margin-top:-8px;
     position:relative;
 }
 
-.menu-icon-2.active{
+.menu-icon2.active{
 border:none;
 background:rgba(0,0,0,0);
 }
-.three-line-2{
+.three-line2{
   background-color:#FDA4BA;
   width: 45px;
   height: 45px;
@@ -337,27 +337,27 @@ background:rgba(0,0,0,0);
   font-size: 0;
 }
 
-.three-line-2:visited{
+.three-line2:visited{
 background-color:rgba(0,0,0,0)!important;
 }
 
-.three-line-2:focus{
+.three-line2:focus{
 background-color:rgba(0,0,0,0)!important;
 }
 
-.three-line-2:not(:focus){
+.three-line2:not(:focus){
 background-color:rgba(0,0,0,0)!important;
 }
 
-.three-line-2:hover{
+.three-line2:hover{
 background-color:rgba(0,0,0,0)!important;
 }
 
-.three-line-2:active{
+.three-line2:active{
 background-color:rgba(0,0,0,0)!important;
 }
 
-.three-line-2 span{
+.three-line2 span{
   background-color:#fff;
   position: absolute;
   border-radius: 2px;
@@ -367,25 +367,25 @@ background-color:rgba(0,0,0,0)!important;
   left: 0;
   transform: rotate(0);
 }
-.three-line-2 span:nth-child(1){
+.three-line2 span:nth-child(1){
   top:5px;
 }
-.three-line-2 span:nth-child(2){
+.three-line2 span:nth-child(2){
 top:20px;
 }
-.three-line-2 span:nth-child(3){
+.three-line2 span:nth-child(3){
   bottom:5px;
 }
-.menu-icon-2.active .three-line-2 span:nth-child(1){
+.menu-icon2.active .three-line2 span:nth-child(1){
   transform: rotate(225deg);
   top: 5px;
 background-color:#fff;
 }
-.menu-icon-2.active .three-line-2 span:nth-child(2){
+.menu-icon2.active .three-line2 span:nth-child(2){
   transform: rotate(180deg);
   visibility:hidden;
 }
-.menu-icon-2.active .three-line-2 span:nth-child(3){
+.menu-icon2.active .three-line2 span:nth-child(3){
   transform: rotate(315deg);
   top: 5px;
 background-color:#fff;
@@ -396,14 +396,14 @@ background-color:#fff;
   from {opacity:0; transform:translate3d(0, -50vh, 0);}
   to {opacity:1; transform:translate3d(0, 0, 0);}
 }
-#cssmenu-2 li a {animation:none;}
-#cssmenu.active li a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.15s backwards;}
-#cssmenu.active li:nth-of-type(1) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.9s backwards;}
-#cssmenu.active li:nth-of-type(2) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.75s backwards;}
-#cssmenu.active li:nth-of-type(3) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.6s backwards;}
-#cssmenu.active li:nth-of-type(4) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.45s backwards;}
-#cssmenu.active li:nth-of-type(5) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.3s backwards;}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #cssmenu.active li a{animation:none!important;}}
+#cssmenu2 li a {animation:none;}
+#cssmenu2.active li a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.15s backwards;}
+#cssmenu2.active li:nth-of-type(1) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.9s backwards;}
+#cssmenu2.active li:nth-of-type(2) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.75s backwards;}
+#cssmenu2.active li:nth-of-type(3) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.6s backwards;}
+#cssmenu2.active li:nth-of-type(4) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.45s backwards;}
+#cssmenu2.active li:nth-of-type(5) a { animation: topItemAnimation 0.9s cubic-bezier(.16,.84,.44,1) 0.3s backwards;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #cssmenu2.active li a{animation:none!important;}}
 
 </style>
 </head>
@@ -784,10 +784,10 @@ background-color:#fff;
 <!----------NON-MOBILE----------->
 <!----------NON-MOBILE----------->
 
-<div class='menu-icon-wrapper-2 d-none d-md-block myfix placeholder'>
+<div class='menu-icon-wrapper2 d-none d-md-block myfix placeholder'>
 <div style='text-align:center; bottom:-40px;'/>
-<div class='menu-icon-2' onclick='toggleCssMenu-2(this)'>		
-<div class='three-line-2'>
+<div class='menu-icon2' onclick='toggleCssMenu2(this)'>		
+<div class='three-line2'>
 <span></span>
 <span></span>
 <span></span>
@@ -795,7 +795,7 @@ background-color:#fff;
 </div>
 </div>
 
-<div id='cssmenu-2'>
+<div id='cssmenu2'>
 <ul>
 <li><a href='#'>Home</a></li>
 <li><a href='#'>About Us</a></li>
@@ -1128,14 +1128,14 @@ background-color:#fff;
 <script src="./js/placeholder.js"></script>
 <script src="./js/youtubelikeloader.js"></script>
 <script>
-function toggleCssMenu-2(icon) { 
-var cssmenu-2 = document.getElementById('cssmenu-2'); 
-if (icon.className.indexOf('active') == -1) { icon.className = 'menu-icon-2 active';
-cssmenu-2.style.display = "block";			
-setTimeout(function(){cssmenu-2.className = 'active';},0); } 
-else { icon.className = 'menu-icon-2';			
+function toggleCssMenu2(icon) { 
+var cssmenu2 = document.getElementById('cssmenu2'); 
+if (icon.className.indexOf('active') == -1) { icon.className = 'menu-icon2 active';
+cssmenu2.style.display = "block";			
+setTimeout(function(){cssmenu2.className = 'active';},0); } 
+else { icon.className = 'menu-icon2';			
 cssmenu.className = '';			
-setTimeout(function(){cssmenu-2.style.display = "none";},411); } }
+setTimeout(function(){cssmenu2.style.display = "none";},411); } }
 </script>
 </body>
 </html>
