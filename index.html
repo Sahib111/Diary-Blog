@@ -11,7 +11,7 @@
 
 .hambergur {
   width: 2.5rem;
-right:10px;
+  left:90%;
 }
 .hambergur div {
   width: 5rem;
@@ -25,12 +25,8 @@ right:10px;
   background: #fff;
 }
 
-ul {
-  
-}
-
 .fullscreen {
-z-index:1000000000;
+  z-index:1000000000;
   -webkit-clip-path: circle(0% at 96.5% 4%);
           clip-path: circle(0% at 96.5% 4%);
   position: absolute;
@@ -41,19 +37,21 @@ z-index:1000000000;
   right: 0;
   transition: all 0.5s cubic-bezier(0.23, 0.93, 0.23, 0.93);
 }
+
 .fullscreen ul {
 list-style: none;
 padding-top:50%;
-margin-right:50%;
+padding-left:50%;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+
 .fullscreen ul li {
   padding: 0.5rem 1rem;
 }
-.fullscreen ul li a {
 
+.fullscreen ul li a {
   font-size: 2.5rem;
   background: -webkit-linear-gradient(45deg, #b68fd5 0%, rgba(255, 174, 174, 0.6853116246) 100%);
   -webkit-background-clip: text;
@@ -75,7 +73,7 @@ z-index:10000000000;
   height: 32px;
   overflow: hidden;
 }
-.fullscreen .close div:before, .fullscreen .close div:after {
+.close div:before, .close div:after {
   content: "";
 z-index:1000000000;
   width: 2rem;
@@ -84,7 +82,7 @@ z-index:1000000000;
   position: absolute;
   border-radius: 5px;
 }
-.fullscreen .close div:after {
+.close div:after {
   transform: rotate(90deg);
 z-index:1000000000;
   background: red;
