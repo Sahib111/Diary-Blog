@@ -3,7 +3,6 @@ position:fixed;
 display:inline-block;
 width:100%;
 margin-top:0!important;
-margin-bottom:12px!important;
 z-index:1054;
 }
 
@@ -303,7 +302,7 @@ background-color:#222222;
 }
 /*----------- menu-icon ----------------*/
 .menu-icon-wrapper2 {
-left:50%!important;
+margin-bottom:15px!important;
 width:100%;
 height:3rem;
 z-index:1054;
