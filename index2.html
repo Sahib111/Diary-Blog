@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./boss.css"/>
+<title>Diary Blog Template</title>
+</head>
+<body>
+
+<!---Youtube like loading--->
+
+<div class="yt">
+<span class="bar placeholder-wave"></span> 
+</div>
+
+<!---Youtube like loading--->
+
+<!---Full screen background video--->
+
+<video loop muted autoplay class="fullscreenvideo position-fixed">
+<source src="./background/children.mp4" type="video/mp4">
+</video>
+
+<!---Full screen background video--->
+
+<!---Sticky Responsive Navbar for Bigger Screens--->
+
+<div class="coverage">
+<div class='menu-icon-wrapper2 d-none d-md-block myfix placeholder'>
+<div style='text-align:center; bottom:-40px;'/>
+<div class='menu-icon2' onclick='toggleCssMenu2(this)'>		
+<div class='three-line2'>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<div id='cssmenu2'>
+<ul>
+<li><a class="my-6" href='#'>Home</a></li><br/>
+<li><a class="my-6" href='#'>About Us</a></li><br/>
+<li><a class="my-6" href='#'>Privacy Policy</a></li><br/>
+<li><a class="my-6" href='#'>Terms and Conditions</a></li><br/>
+</ul>
+</div>
+</div>
+</div>
+<br/>
+<br/>
+
+<!---Sticky Responsive Navbar for Bigger Screens--->
+
+<!---Carousel for small screens with wave effect--->
+
+<div class="mb-3 mx-0 d-block d-md-none myfix placeholder-wave placeholder">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/time-371226_1920_dLYmYyJNc.jpg?updatedAt=1630258954282" class="d-block w-100 h-100">
+</div>
+<div class="carousel-item" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" class="d-block w-100 h-100">
+</div>
+<div class="carousel-item" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/panda-1892023_1280_Pbn4yQzID.png?updatedAt=1629913942274" class="d-block w-100 h-100">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!---Carousel for small screens with wave effect--->
+
+<!---Carousel for big screens without wave effect because of performance issue--->
+
+<div class="mb-3 mx-0 d-none d-md-block myfix placeholder">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/time-371226_1920_dLYmYyJNc.jpg?updatedAt=1630258954282" class="d-block w-100 h-100">
+</div>
+<div class="carousel-item" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" class="d-block w-100 h-100">
+</div>
+<div class="carousel-item" data-bs-interval="3500">
+<img src="https://ik.imagekit.io/sahibkapoor111/panda-1892023_1280_Pbn4yQzID.png?updatedAt=1629913942274" class="d-block w-100 h-100">
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!---Carousel for big screens without wave effect because of performance issue--->
+
+<!---Cards in Mobile Devices--->
+
+<div class="container d-block d-md-none mx-6 mx-md-0 mw-md-75">
+<div class="row" aria-hidden="true">
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-1 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-2 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-3 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-4 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body">
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-5 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-6 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-7 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-8 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-9 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-10 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-11 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder-wave placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder-wave placeholder">Card title</h5> 
+<p class="card-text myfix placeholder-wave placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-12 bar1 btn btn-primary myfix placeholder-wave placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!---Cards in Mobile Devices--->
+
+<!---Pagination in Mobile Devices--->
+
+<nav class="d-block d-md-none" aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+   <li class="page-item"><a class="page-link" href="#">4</a></li>
+   <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+<!---Pagination in Mobile Devices--->
+
+<!---Special Treatment card for mobile devices--->
+
+<div class="container d-block d-md-none">
+<div class="row">
+<div class="col-12 mt-2">
+<div class="card myfix placeholder-wave placeholder">
+<div class="card-header">Featured</div>
+<div class="card-body">
+<h5 class="card-title">Special title treatment</h5>
+<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+<a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+<br/>
+
+<!---Special Treatment card for mobile devices--->
+
+<div class="col d-block d-md-none">
+<div class="d-block d-md-none d-block mx-6 mt-2 embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item myfix placeholder-wave placeholder" width="98%" height="370px" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe> 
+</div>
+</div>
+<br/>
+
+<!---Youtube Iframe in mobile devices--->
+
+<div class="col d-block d-md-none">
+<div class="d-block d-md-none d-block mx-6 mt-2 embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item myfix placeholder-wave placeholder" width="98%" height="370px" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe> 
+</div>
+</div>
+<br/>
+
+<!---Youtube Iframe in mobile devices--->
+
+<!---Social Media Icons in mobile devices--->
+
+<div class="col mb-5 mt-2">
+<div class="card">
+<div class="card-header">Social Media Icons</div>
+<div class="card-body">
+<div class="row">
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #3b5998; border:none;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #4c75a3;" href="#!" role="button"><i class="fab fa-vk"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #ffac44;" href="#!" role="button"><i class="fab fa-stack-overflow"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #481449;" href="#!" role="button"><i class="fab fa-slack-hash"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #ec4a89;" href="#!" role="button"><i class="fab fa-dribbble"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #ff4500;" href="#!" role="button"><i class="fab fa-reddit-alien"></i></a>
+</div>
+<div class="col-3">
+<a class="btn btn-primary mx-1 my-2" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!---Social Media Icons in mobile devices--->
+
+<!---Author Info in mobile devices--->
+
+<div class="container d-block d-md-none">
+<div class="d-block">
+<div class="row gutters-sm">
+<div class="col-md-4 mb-3">
+<div class="card">
+<div class="card-body">
+<div class="d-flex flex-column align-items-center text-center">
+<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+<div class="mt-3">
+<h4>John Doe</h4>
+<p class="text-secondary mb-1">Full Stack Developer</p>
+<p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+<button class="btn btn-primary">Follow</button>
+<button class="btn btn-outline-primary">Message</button>
+<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap my-3">
+<h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe mr-2 icon-inline"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Website</h6>
+<span class="text-secondary">https://bootdey.com</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap my-3">
+<h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github mr-2 icon-inline"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Github</h6>
+<span class="text-secondary">bootdey</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap my-3">
+<h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter mr-2 icon-inline text-info"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>Twitter</h6>
+<span class="text-secondary">@bootdey</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap my-3">
+<h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram mr-2 icon-inline text-danger"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Instagram</h6>
+<span class="text-secondary">bootdey</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center flex-wrap my-3">
+<h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook mr-2 icon-inline text-primary"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>Facebook</h6>
+<span class="text-secondary">bootdey</span>
+</li>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!---Author Info in mobile devices--->
+
+<!---Footer In Mobile Devices--->
+
+<div class="container-fluid mt-2 d-block d-md-none myfix placeholder-wave placeholder" style="background: #6a85b6; background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1)); background: linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));">
+<footer class="text-center text-light">
+<div class="container">
+<div class="row">
+<div class="col mx-2 d-block d-md-none">
+<form>
+<div class="form-group">
+<label class="text-dark mt-4" for="inputEmail"><h3><b>Subscribe for our newsletter</b></h3></label>
+<input type="email" class="form-control mb-4" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
+</div>
+<button type="submit" class="btn btn-primary" style="border-radius:20px;">Subscribe Now</button>
+</form>
+</div>
+
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col mx-2 d-block d-md-none mt-3">
+<h2 class="text-uppercase text-dark font-weight-bold"><b>Contact us</b></h2>
+<form>
+<input type="text" class="form-control" placeholder="Your name" style="border-radius:20px;"></input>
+<div class="form-group">
+<label class="text-dark mt-4" for="inputEmail"></label>
+<input type="email" class="form-control mb-3" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
+</div>
+<div class="form-group"> 
+<label for="exampleFormControlTextarea1"></label> 
+<textarea class="form-control pb-4" id="exampleFormControlTextarea1" rows="6" placeholder="Feel free to type anything..." style="border-radius:10px;"></textarea> 
+</div>
+<br/>
+<center><button type="submit" class="btn btn-primary" style="border-radius:20px;">Share &nbsp;<i class="bi bi-share-fill"></i></button></center>
+</form>
+</div>
+
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="container-fluid p-4 pb-0">
+<section class="text-dark">
+<div class="row">
+<div class="col-md-3 col-lg-3 col-xl-3 mx-6 mt-3">
+<h2 class="text-uppercase mb-4 text-dark font-weight-bold">
+<b>My Diary</b>
+</h2>
+<p>
+<h6>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+</p>
+</div>
+
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase mb-4 text-center text-dark font-weight-bold"><b>Products</b></h2>
+<p><a><h6>MDBootstrap</a></p>
+<p><a>MDWordPress</a></p>
+<p><a>BrandFlow</a></p>
+<p><a>Bootstrap Angular</h6></a>
+</p>
+</div>
+          
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase text-dark mb-4 font-weight-bold"><b>Useful links</b></h2>
+<p><a><h6>FAQ's</a></p>
+<p><a>Home</a></p>
+<p><a>My Entries</a></p>
+<p><a>About myself</a></p>
+<p><a>Submit your feelings anonymously</h6></a></p>
+</div>
+
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+</div>
+</div>
+</section>
+      
+<hr class="my-3">
+
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+<div class="col-md-7 col-lg-8 text-center text-md-start">
+<div class="p-3" style="font-family: 'Satisfy', cursive;">Designed by:
+<a class="text-white" href="#">
+<br/>Sarabjeet Singh<br/>(S.S Leonard Tyler)</a>
+</div>
+</div>
+         
+<div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</section>
+</div>
+</footer>
+</div>
+
+<!---Footer in Mobile Devices--->
+
+<!---Floating Menu for Mobile Devices--->
+
+<div class='menu-icon-wrapper d-block d-md-none myfix placeholder-wave placeholder'>
+<div style='text-align:center; bottom:-40px;'/>
+<div class='menu-icon' onclick='toggleCssMenu(this)'>		
+<div class='three-line'>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+<div id='cssmenu'>
+<ul>
+<li><a href='#'>Home</a></li>
+<li><a href='#'>About Us</a></li>
+<li><a href='#'>Privacy Policy</a></li>
+<li><a href='#'>Terms and Conditions</a></li>
+</ul>
+</div>
+</div>
+
+<!---Floating Menu for Mobile Devices--->
+
+<!---Special Treatment Card in Bigger Screens--->
+
+<div class="container-fluid d-none d-md-inline-block mr-md-6 position-absolute">
+<div class="row">
+<div class="col-9 mx-6" style="max-width:74%;"></div>
+<div class="col-3 mr-md-5 mt-2" style="float:right; max-width:26%;">
+<div class="card myfix placeholder" style="max-width:98%;">
+<div class="card-header">Featured</div>
+<div class="card-body">
+<h5 class="card-title">Special title treatment</h5>
+<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+<a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+<br/>
+
+<!---Special Treatment Card in Bigger Screens--->
+
+<!---Youtube Iframe in Bigger Screens--->
+
+<div class="col mr-md-5">
+<div class="d-md-block mt-2 embed-responsive embed-responsive-1by1">
+<iframe class="embed-responsive-item myfix placeholder" width="220" height="200" src="https://www.youtube-nocookie.com/embed/dFUYsbbf6U0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe> 
+</div>
+</div>
+<br/>
+
+<!---Youtube Iframe in Bigger Screens--->
+
+<!---Social Media Icons in Bigger Screen--->
+
+<div class="container g-0" style="max-width:98%;">
+<div class="card">
+<div class="col-12">
+<div class="card-header">Social Media Icons</div>
+<div class="card-body">
+<div class="row" style="float:left;">
+<div class="col-4">
+<a class="btn btn-primary mr-5 my-2" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary mr-5 my-2" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary mr-5 my-2" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary mr-5 my-2" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #c61118;" href="#!" role="button"><i class="fab fa-pinterest"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #4c75a3;" href="#!" role="button"><i class="fab fa-vk"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #ffac44;" href="#!" role="button"><i class="fab fa-stack-overflow"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #481449;" href="#!" role="button"><i class="fab fa-slack-hash"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #ec4a89;" href="#!" role="button"><i class="fab fa-dribbble"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #ff4500;" href="#!" role="button"><i class="fab fa-reddit-alien"></i></a>
+</div>
+<div class="col-4">
+<a class="btn btn-primary my-2" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!---Social Media Icons in Bigger Screen--->
+
+<!---Cards in Bigger Screen--->
+
+<div class="container d-none d-md-block mx-6 mx-md-0 mw-md-75">
+<div class="row" aria-hidden="true">
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5>
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-1 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5>
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-2 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5>
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-3 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a>
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> <div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-4 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-5 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body">
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-6 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap">
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-7 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-8 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-9 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-10 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body">
+<h5 class="card-title myfix placeholder">Card title</h5>
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-11 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+
+<div class="col-md-4 col-12 mb-4 ">
+<div class="card">
+<img class="card-img-top myfix placeholder" src="https://ik.imagekit.io/sahibkapoor111/supermarket-6244649_1280_RcUCELT25.png?updatedAt=1629913938198" alt="Card image cap"> 
+<div class="card-body"> 
+<h5 class="card-title myfix placeholder">Card title</h5> 
+<p class="card-text myfix placeholder">Some quick example text to build on the card title and make up the bulk of the card's content.</p> 
+<a class="myfix-12 bar1 btn btn-primary myfix placeholder" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Go somewhere</a> 
+</div> 
+</div>
+</div>
+</div>
+</div>
+
+<!---Cards in Bigger Screens--->
+
+<!---Universal Modals--->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-fullscreen-xxl-down">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="staticBackdropLabel"></h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style:width:150%;height:150%;></button>
+</div>
+<div class="modal-body">
+<div id="box"></div>
+</div>
+</div>
+</div>
+</div>
+
+<!---Universal Modals--->
+
+<!---Pagination in Bigger Screens--->
+
+<div class="container">
+<div class="row">
+<div class="col-3">
+<nav class="d-none d-md-block" aria-label="Page navigation example">
+<ul class="pagination">
+<li class="page-item disabled">
+<a class="page-link">Previous</a>
+</li>
+<li class="page-item active"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item">
+<a class="page-link" href="#">Next</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+
+<!---Pagination in Bigger Screens--->
+
+<!---Footer in Bigger Screens--->
+
+<div class="container-fluid mt-2 d-none d-md-block myfix placeholder" style="background: #6a85b6; background: -webkit-linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1)); background: linear-gradient(to top, rgba(106, 133, 182, 1), rgba(186, 200, 224, 1));">
+<footer class="text-center text-light">
+<div class="container-fluid">
+<div class="row">
+<div class="col mx-2 d-none d-md-block">
+<form>
+<div class="form-group">
+<label class="text-dark mt-4" for="inputEmail"><h3><b>Subscribe for our newsletter</b></h3></label>
+<input type="email" class="form-control mb-4" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
+</div>
+<button type="submit" class="btn btn-primary" style="border-radius:20px;">Subscribe Now</button>
+</form>
+</div>
+
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col mx-2 d-block d-md-none mt-3">
+<h2 class="text-uppercase text-dark font-weight-bold"><b>Contact us</b></h2>
+<form>
+<div class="form-group">
+<label for="exampleFormControlTextarea1"></label>
+<input type="text" class="form-control" placeholder="Your name" style="border-radius:20px;"></input>
+</div>
+<div class="form-group">
+<label class="text-dark mt-4" for="inputEmail"></label>
+<input type="email" class="form-control mb-3" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
+</div>
+<div class="form-group"> 
+<label for="exampleFormControlTextarea1"></label> 
+<textarea class="form-control pb-4" id="exampleFormControlTextarea1" rows="6" style="border-radius:10px;"></textarea> 
+</div>
+<br/>
+<center><button type="submit" class="btn btn-primary" style="border-radius:20px;">Share &nbsp;<i class="bi bi-share-fill"></i></button></center>
+</form>
+</div>
+
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="container-fluid p-4 pb-0">
+<section class="text-dark">
+<div class="row">
+<div class="col-md-3 col-lg-3 col-xl-3 mx-6 mt-3">
+<h2 class="text-uppercase mb-4 text-dark font-weight-bold">
+<b>My Diary</b></h2>
+<p><h6>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6></p>
+</div>
+
+<hr class="w-100 d-block d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase mb-4 text-center text-dark font-weight-bold"><b>Products</b></h2>
+<p><a><h6>MDBootstrap</a></p>
+<p><a>MDWordPress</a></p>
+<p><a>BrandFlow</a></p>
+<p><a>Bootstrap Angular</h6></a></p>
+</div>
+          
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col-md-3 mt-3">
+<h2 class="text-uppercase text-dark mb-4 font-weight-bold"><b>Useful links</b></h2>
+<p><a><h6>FAQ's</a></p>
+<p><a>Home</a></p>
+<p><a>My Entries</a></p>
+<p><a>About myself</a></p>
+<p><a>Submit your feelings anonymously</h6></a></p>
+</div>
+
+<hr class="w-100 d-md-none mt-4" style="border:1px solid #000000"></hr>
+
+<div class="col-md-3 d-none d-md-block mt-3">
+<h2 class="text-uppercase mb-3 text-dark font-weight-bold"><b>Contact us</b></h2>
+<form id="form-group text-white">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Your name" style="border-radius:20px;"> </input>
+<label class="text-dark mt-3" for="inputEmail"></label>
+<input type="email" class="form-control mb-1" id="inputEmail" placeholder="Enter your email address" style="border-radius:20px;max-width:100%;">
+</div>
+<div class="form-group"> 
+<label for="exampleFormControlTextarea1"></label> 
+<textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="6" cols="3" placeholder="Feel free to write anything..." style="border-radius:10px;"></textarea> 
+</div>
+<br/>
+<center><button type="submit" class="btn btn-primary" style="border-radius:20px;">Share &nbsp;<i class="bi bi-share-fill"></i></button></center>
+<form>
+</div>
+</div>
+</div>
+</section>
+      
+<hr class="my-5">
+
+<section class="p-3 pt-0">
+<div class="row d-flex align-items-center">
+<div class="col-md-7 col-lg-8 text-center text-md-start">
+<div class="p-3" style="font-family: 'Satisfy', cursive;">Designed by:
+<a class="text-white" href="#"><br/>Sarabjeet Singh<br/>(S.S Leonard Tyler)</a>
+</div>
+</div>
+<div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+<a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</section>
+</div>
+</footer>
+</div>
+
+<!---Footer in Bigger Screens--->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.0-alpha.1/jquery-ui.min.js" integrity="sha256-ahTP8JLHwIplWgufAohh+E04ayoLEUBEwcH04eUmIdA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="./js/cssmenu.js"></script>
+<script src="./js/cssmenu2.js"></script>
+<script src="./js/placeholder.js"></script>
+<script src="./js/youtubelikeloader.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>
