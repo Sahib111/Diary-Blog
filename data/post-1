@@ -19,5 +19,13 @@ Vivamus vitae imperdiet elit, in ultrices est. Duis vitae ultrices metus. Nullam
 Phasellus euismod porttitor diam ac vehicula. Quisque in vulputate augue, et varius dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ultricies metus ac metus tristique bibendum. Integer pretium auctor nulla eu lobortis. Curabitur cursus erat sed molestie ultricies. Fusce felis est, lobortis at mollis sit amet, consequat in mauris. Nullam eu pretium arcu. Ut vel turpis et lacus tristique sodales sed ut urna. Nullam pellentesque ac nulla vel semper. Suspendisse in urna tortor. Vestibulum fermentum diam quis tristique euismod. Phasellus porta at odio eu ornare. Quisque interdum mollis enim, eget dignissim neque vulputate non.
 </h4>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.0-alpha.1/jquery-ui.min.js" integrity="sha256-ahTP8JLHwIplWgufAohh+E04ayoLEUBEwcH04eUmIdA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="./js/cssmenu.js"></script>
+<script src="./js/cssmenu2.js"></script>
+<script src="./js/placeholder.js"></script>
+<script src="./js/youtubelikeloader.js"></script>
+<script src="./js/modal.js"></script>
 </body>
 </html>
