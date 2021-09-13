@@ -10,3 +10,8 @@ font-size:22px;
 .btn {
 border-radius:25px;
 }
+
+.btn-close{
+min-height:2em!important;
+min-width:2em!important;
+}
