@@ -3,3 +3,16 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+.placeholder{
+filter:brightness(5%) contrast(5%);
+}
+
+.placeholder-wave {
+  -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
+  mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-animation: placeholder-wave 1.3s infinite;
+  animation: placeholder-wave 1.3s infinite;
+}
