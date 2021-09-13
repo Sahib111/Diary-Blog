@@ -24,3 +24,9 @@ $("#box").load("./data/post-11");});
 $(".myfix-12").click(function(){
 $("#box").load("./data/post-12");});
 });
+
+$(function(){
+$(".btn-close").click(function(){
+$("#box").trigger("unload");
+});
+});
