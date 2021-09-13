@@ -13,4 +13,33 @@ The Template was built, keeping in mind, mobile and desktop vision. So, the temp
 1. Mobile Devices.
 2. Desktop Devices.
 
-You can use both or use one, depending on your use. The two are well defined with <!------->. So you don't have strain your eyes.
+You can use both or use one, depending on your use. The two are well defined with <!-------> of different elements as per structure of the website. So you don't have to strain your eyes.
+It instructions are simple as that:
+1) Unzip the .zip file.
+2) Customize as per your need. (Not much coding required if you are happy with the structure of the template.)
+3) Upload it to the server.
+ENJOY!!!
+
+SOME CUSTOMIZATION TIPS
+1) Upon clicking on the cards, one can see a modal dialog box with content inside. We can customize that html interface in data folder. You can add as many cards as you want to but the current setup includes:
+12 cards.
+100 cards limit which you can create on your own.
+A little bit of coding and copy-paste if you want to expand even more.
+
+To expand beyond hundred cards limit, follow the instructions:-
+1) Every card has a unique class("myfix-*") with which that html file would be opened. Use these preceding numbers to copy paste the existing cards and create more.(Just make sure that not to have the same class for 2 cards or your know the result. Keep in mind to leave the last two </div> to be able to follow the grid.
+2) After changing the html code, now come to modal.js in js folder where the real magic occurs.
+3) You will see something like:-
+
+$(function){
+$(".myfix-1").click(function(){
+$("#box").load("./data/post-1.html");});
+$(".myfix-1").click(function(){
+$("#box").load("./data/post-1.html");});
+....
+.
+.
+where myfix-1 is the unique class you can alter with your desired number.
+load("path of the html file that you want to show in modal")
+
+2) This template is built mainly on Bootstrap. So, no back-end of the forms are expected to be worked. Code or remove it.
