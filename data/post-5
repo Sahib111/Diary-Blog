@@ -3,21 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./links.css"/>
 <link rel="stylesheet" href="./boss.css"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <title>Diary Blog Template</title>
 
 </head>
 <body>
-<div style="myfix placeholder-wave placeholder">
-<h1> ways to lose weight</h1>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXTojoY0L5URBpaq5MNJ-zjXd5QcwZvrbVw&usqp=CAU" style="max-width:100%; width:auto; height:auto;"></img>
-<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod, tellus sit amet faucibus scelerisque, orci eros porta nulla, vel pulvinar sem magna ac lacus. Sed ut ante elementum, eleifend ligula sed, luctus risus. Duis porta commodo tempus. Vestibulum ullamcorper, ligula ac volutpat feugiat, dui risus vehicula nisi, ut pharetra erat augue eget odio. Aenean porta mattis ultricies. Curabitur id neque neque. Suspendisse et augue ac odio lobortis lacinia at eu risus. Sed volutpat imperdiet lacinia. Donec vel tincidunt lorem. Nulla facilisi. Curabitur vulputate diam sed ultricies eleifend.
+<div class="align-items-center justify-content-center text-center mx-3 mx-md-5">
+<h1 class="my-4 myfix placeholder-wave placeholder">Top eight ways to lose weight and get a fg</h1>
+<img class="my-4 myfix placeholder-wave placeholder" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXTojoY0L5URBpaq5MNJ-zjXd5QcwZvrbVw&usqp=CAU" style="max-width:100%; width:auto; height:auto;"></img>
+<h4 class="myfix placeholder-wave placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod, tellus sit amet faucibus scelerisque, orci eros porta nulla, vel pulvinar sem magna ac lacus. Sed ut ante elementum, eleifend ligula sed, luctus risus. Duis porta commodo tempus. Vestibulum ullamcorper, ligula ac volutpat feugiat, dui risus vehicula nisi, ut pharetra erat augue eget odio. Aenean porta mattis ultricies. Curabitur id neque neque. Suspendisse et augue ac odio lobortis lacinia at eu risus. Sed volutpat imperdiet lacinia. Donec vel tincidunt lorem. Nulla facilisi. Curabitur vulputate diam sed ultricies eleifend.
 Nam malesuada, libero vel tristique feugiat, felis mi cursus ante, id rhoncus ligula augue ut purus. Phasellus facilisis turpis non urna volutpat condimentum. Donec urna justo, commodo tempor semper bibendum, placerat ut nulla. Aliquam pretium sapien non ex semper congue. Nam semper velit ut sapien semper finibus. Vestibulum eget urna erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus egestas dictum lectus, bibendum fermentum lacus lacinia quis. Aenean malesuada, velit non ullamcorper fermentum, metus ipsum commodo nisl, at malesuada erat turpis eget ex. Quisque bibendum vel mi sed iaculis. Sed sit amet dapibus urna, non pellentesque turpis. Nullam imperdiet leo turpis, a molestie velit molestie viverra. Duis rhoncus placerat nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque purus tortor, maximus vitae enim sed, sollicitudin fringilla tellus. Nullam vel dignissim nulla.
 Vivamus vitae imperdiet elit, in ultrices est. Duis vitae ultrices metus. Nullam nec arcu ac lacus cursus accumsan quis a diam. Integer tempus felis ut metus convallis, eu fermentum eros fringilla. Integer efficitur sapien augue, quis tincidunt est fringilla non. Duis viverra lorem sed leo tincidunt, ac commodo enim dapibus. Ut id ornare libero, id viverra velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce turpis ante, pretium quis tincidunt a, dictum finibus lorem.
 Phasellus euismod porttitor diam ac vehicula. Quisque in vulputate augue, et varius dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras ultricies metus ac metus tristique bibendum. Integer pretium auctor nulla eu lobortis. Curabitur cursus erat sed molestie ultricies. Fusce felis est, lobortis at mollis sit amet, consequat in mauris. Nullam eu pretium arcu. Ut vel turpis et lacus tristique sodales sed ut urna. Nullam pellentesque ac nulla vel semper. Suspendisse in urna tortor. Vestibulum fermentum diam quis tristique euismod. Phasellus porta at odio eu ornare. Quisque interdum mollis enim, eget dignissim neque vulputate non.
 </h4>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<script src="./placeholder.js"></script>
+<script src="./js/placeholder.js"></script>
 </body>
 </html>
